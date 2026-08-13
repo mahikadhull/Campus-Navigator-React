@@ -1,14 +1,17 @@
 import { getCurrentStatus } from "../utils/status";
 
-function InfoPanel({ selectedLocation }) {
+function InfoPanel({ selectedLocation,isInfoOpen,setIsInfoOpen }) {
     if (!selectedLocation) {
         return (
             <aside id="info-panel">
-                <button id="info-toggle-btn">
-
+                <button id="info-toggle-btn"
+                onClick={()=>setIsInfoOpen(!isInfoOpen)}
+                >
+                Info
 
                 </button>
-                <div id="info-content">
+                <div id="info-content"
+                className={`info-panel ${isInfoOpen ? "open" : ""}`}>
                     <h2>Select a Location</h2>
                     <p>Tap any building on the map to view its details.</p>
                 </div>

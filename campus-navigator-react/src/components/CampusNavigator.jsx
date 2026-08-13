@@ -28,6 +28,8 @@ function CampusNavigator() {
             />
             <InfoPanel
             selectedLocation={selectedLocation}
+            isInfoOpen={isInfoOpen}
+            setIsInfoOpen={setIsInfoOpen}
             />
         </main>
         
