@@ -14,7 +14,7 @@ body{
     flex-direction: column;
 }
 /* Campus navigatorr.. */
-.campus-navigator {
+/* .campus-navigator {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -142,7 +142,7 @@ main{
 
 #mobile-menu button:hover {
     background: #f1f1f1;
-}
+} */
 
 
 /* Landing Page ... */
@@ -218,7 +218,7 @@ main{
 
 /* Map */
 
-.map-section {
+/* .map-section {
     position: absolute;
     inset: 0;
     width: 100vw; height: 100vh;
@@ -233,7 +233,7 @@ main{
     display: block;
     width: 100% ;
     height: 100% ;
-}
+} */
 
 /* Info Panel */
 
