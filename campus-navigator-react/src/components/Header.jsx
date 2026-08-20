@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar";
 
 function Header({
     search, setSearch, setSelectedLocation, onAbout, onTheme, setIsInfoOpen,darkMode
-}) {
+,onLegend}) {
     const [menuOpen, setMenuOpen] = useState(false);
     function toggleMenu() {
         setMenuOpen(!menuOpen);
@@ -36,6 +36,7 @@ function Header({
                 onAbout={onAbout}
                 onTheme={onTheme}
                 darkMode={darkMode}
+                onLegend={onLegend}
             />
         </header>
     );
