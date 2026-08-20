@@ -1,6 +1,6 @@
 import { locations } from "../data/locations";
 
-function SearchBar({search,setSearch,setSelectedLocation}) {
+function SearchBar({search,setSearch,setSelectedLocation,setIsInfoOpen}) {
     const query = search.trim().toLowerCase();
     const matches = query === ""
     ? []
@@ -9,11 +9,12 @@ function SearchBar({search,setSearch,setSelectedLocation}) {
     );
     function handleResultClick(location) {
         setSelectedLocation(location);
+        setIsInfoOpen(true);
         setSearch("");
     }
     return (
         <div className="search-container">
-            <input type="search" id="search" placeholder="Search buildings..." 
+            <input type="search" id="search" placeholder="Search buildings, labs, offices..." 
             value={search}
             onChange={(event)=>setSearch(event.target.value)}
             

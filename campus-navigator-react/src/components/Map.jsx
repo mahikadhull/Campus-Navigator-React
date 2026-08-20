@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { locations } from "../data/locations";
 
-function Map({ selectedLocation, setSelectedLocation, selectedCategory }) {
+function Map({ selectedLocation, setSelectedLocation, selectedCategory,setIsInfoOpen }) {
     const mapRef = useRef(null);
     function handleMapClick(event) {
         const building = event.target.closest(".location");
@@ -11,6 +11,7 @@ function Map({ selectedLocation, setSelectedLocation, selectedCategory }) {
         );
         if (!location) return;
         setSelectedLocation(location);
+        setIsInfoOpen(true);
     }
     // const [svgContent, setSvgContent] = useState("");
     useEffect(() => {
@@ -21,7 +22,7 @@ function Map({ selectedLocation, setSelectedLocation, selectedCategory }) {
             const svgElement = mapRef.current.querySelector("svg");
             svgElement.addEventListener("click", handleMapClick);
         }
-        loadMap();
+        loadMap();      
 
         return () => {
             const svgElement = mapRef.current?.querySelector("svg");
@@ -30,6 +31,38 @@ function Map({ selectedLocation, setSelectedLocation, selectedCategory }) {
             }
         }
     }, []);
+    useEffect(() => {
+        if (!mapRef.current) return;
+
+        const buildings =
+            mapRef.current.querySelectorAll(".location");
+
+        // Remove previous selection
+        buildings.forEach(building => {
+            building.classList.remove("selected-building");
+            building.style.removeProperty("--selected-fill");
+            building.style.removeProperty("--selected-stroke");
+        });
+
+        if (!selectedLocation) {
+            return;}
+
+        const selectedBuilding =
+            mapRef.current.querySelector(
+                `#${selectedLocation.id}`
+            );
+
+        if (!selectedBuilding) return;
+
+        selectedBuilding.classList.add("selected-building");
+        selectedBuilding.style.setProperty(
+            "--selected-fill",`var(--${selectedLocation.category})`
+        );
+        selectedBuilding.style.setProperty(
+            "--selected-stroke",`var(--${selectedLocation.category}_stroke)`
+        );
+
+    }, [selectedLocation]);
     useEffect(() => {
 
         if (!mapRef.current) return;

@@ -1,45 +1,87 @@
 import { getCurrentStatus } from "../utils/status";
 
-function InfoPanel({ selectedLocation,isInfoOpen,setIsInfoOpen }) {
-    if (!selectedLocation) {
-        return (
-            <aside id="info-panel">
-                <button id="info-toggle-btn"
-                onClick={()=>setIsInfoOpen(!isInfoOpen)}
-                >
-                Info
+function InfoPanel({ selectedLocation, isInfoOpen, setIsInfoOpen }) {
 
-                </button>
-                <div id="info-content"
-                className={`info-panel ${isInfoOpen ? "open" : ""}`}>
-                    <h2>Select a Location</h2>
-                    <p>Tap any building on the map to view its details.</p>
-                </div>
-            </aside>
-        );
-    }
-    const status = getCurrentStatus(selectedLocation);
+    const status = selectedLocation
+        ? getCurrentStatus(selectedLocation)
+        : null;
+
     return (
         <aside id="info-panel">
 
-            <button id="info-toggle-btn">
-                ◀
+            <button
+                id="info-toggle-btn"
+                onClick={() => setIsInfoOpen(prev => !prev)}
+            >
+                <i
+                    className={
+                        isInfoOpen
+                            ? "fa-solid fa-chevron-down info-down"
+                            : "fa-solid fa-chevron-up info-up"
+                    }
+                ></i>
             </button>
 
-            <div id="info-content">
+            <div
+                id="info-content"
+                className={isInfoOpen ? "open" : ""}
+            >
 
-                <h2>{selectedLocation.name}</h2>
+                {!selectedLocation ? (
+                    <>
+                        <h2>Select a Location</h2>
+                        <p>
+                            Tap any building on the map to view its details.
+                        </p>
+                    </>
+                ) : (
+                    <>
+                        <h2>{selectedLocation.name}</h2>
 
-                <p>{selectedLocation.description}</p>
+                        <p id="info-description">
+                            {selectedLocation.description}
+                        </p>
 
-                <p>
-                    <strong>Category:</strong> {selectedLocation.category}
-                </p>
-                <p>
-                    <strong>Status:</strong>
-                    {" "}
-                    {status}
-                </p>
+                        <p
+                            id="info-category"
+                            style={{
+                                color: `var(--${selectedLocation.category}_stroke)`
+                            }}
+                        >
+                            <strong>Category:</strong>{" "}
+                            {selectedLocation.category}
+                        </p>
+
+                        <p id="status">
+                            <strong>Status:</strong>{" "}
+                            {status}
+                        </p>
+                        <section className="info-section">
+                            <h4>Access</h4>
+
+                            <div className="info-tags">
+                                {selectedLocation.access.map((person) => (
+                                    <span key={person}>
+                                        {person}
+                                    </span>
+                                ))}
+                            </div>
+                        </section>
+
+                        <section className="info-section">
+                            <h4>Facilities</h4>
+
+                            <div className="info-tags">
+                                {selectedLocation.facilities.map((facility) => (
+                                    <span key={facility}>
+                                        {facility}
+                                    </span>
+                                ))}
+                            </div>
+                        </section>
+
+                    </>
+                )}
 
             </div>
 

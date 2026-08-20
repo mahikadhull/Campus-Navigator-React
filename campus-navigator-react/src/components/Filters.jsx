@@ -6,6 +6,8 @@ function Filters({selectedCategory,setSelectedCategory}) {
         ...new Set(locations.map(location=>location.category))
     ];
     return (
+        <section id="filters-container">
+            <h5>Explore</h5>
          <section id="filters">
             {categories.map(category=>(
                 <button
@@ -15,10 +17,16 @@ function Filters({selectedCategory,setSelectedCategory}) {
                     selectedCategory === category ? "active"
                     : ""
                 }
+                style={{
+                    "--category-color":`var(--${category})`,
+                    "--category-stroke":`var(--${category}_stroke)`
+                }}
                 
                 >{category.charAt(0).toUpperCase() + category.slice(1)}</button>
             ))}
         </section>
+        </section>
+
     );
 }
 export default Filters;

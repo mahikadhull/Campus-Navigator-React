@@ -1,4 +1,5 @@
-<svg width="859" height="857" viewBox="0 0 859 857" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="859" height="857" viewBox="0 0 859 857" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
 <rect opacity="0.3" x="3.29266" y="14.6821" width="855" height="842" fill="url(#pattern0_8_39)"/>
 <rect id="explore-hub" class="location" x="383.293" y="399.682" width="21" height="39" fill="#FFE082"/>
 <!-- <rect id="x="502.293" y="276.682" width="21" height="17" fill="#FFE082"/> -->
@@ -182,14 +183,19 @@
 <path id="maingate-entry-block" class="location" d="M421.504 90.9577L376.833 37.7434L426.545 21.6622L421.504 90.9577Z" fill="#ECECEC"/>
 
 <!-- Parkings -->
-<rect x="266.293" y="85.326" width="84.71" height="25.4936" transform="rotate(-39.4213 266.293 85.326)" fill="#FFF5CC"/>
-<rect x="431.446" y="19.752" width="156.904" height="66.7961" transform="rotate(0.0489253 431.446 19.752)" fill="#FFF5CC"/>
-<rect x="503.324" y="179.682" width="83.9745" height="36.9283" transform="rotate(0.0489253 503.324 179.682)" fill="#FFF5CC"/>
-<rect x="646.293" y="393.682" width="50" height="121" fill="#FFF5CC"/>
-<rect x="342.293" y="523.682" width="144" height="44" fill="#FFF5CC"/>
-<rect x="221.293" y="147.697" width="38.2328" height="42.2956" transform="rotate(-35.1566 221.293 147.697)" fill="#FFF5CC"/>
-<path d="M221.793 146.682L246.474 182.682H197.111L221.793 146.682Z" fill="#FFF5CC"/>
-<rect x="610.293" y="399.682" width="27" height="63" fill="#FFF5CC"/>
+<rect id="parking-chaivyanjan" class="location" x="266.293" y="85.326" width="84.71" height="25.4936" transform="rotate(-39.4213 266.293 85.326)" fill="#FFF5CC"/>
+<rect id="parking-maingate" class="location" x="431.446" y="19.752" width="156.904" height="66.7961" transform="rotate(0.0489253 431.446 19.752)" fill="#FFF5CC"/>
+<rect id="parking-turing" class="location" x="646.293" y="393.682" width="50" height="121" fill="#FFF5CC"/>
+<g id="parking-omega" class="location">
+<rect id="parking-omega1" class="location" x="503.324" y="179.682" width="83.9745" height="36.9283" transform="rotate(0.0489253 503.324 179.682)" fill="#FFF5CC"/>
+<rect id="parking-omega2" class="location"x="610.293" y="399.682" width="27" height="63" fill="#FFF5CC"/>
+</g>
+<rect id="parking-bus" class="location" x="342.293" y="523.682" width="144" height="44" fill="#FFF5CC"/>
+<g id="parking-chaivyanjan-left">
+<rect id="parking-6" class="location" x="221.293" y="147.697" width="38.2328" height="42.2956" transform="rotate(-35.1566 221.293 147.697)" fill="#FFF5CC"/>
+<path id="parking-7" class="location" d="M221.793 146.682L246.474 182.682H197.111L221.793 146.682Z" fill="#FFF5CC"/>
+</g>
+
 
 <!-- Background -->
 <rect x="90.2927" y="236.682" width="77" height="71" fill="#FFF5CC"/>

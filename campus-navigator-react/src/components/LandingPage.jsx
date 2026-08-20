@@ -3,12 +3,12 @@ function LandingPage({ onExplore }) {
     const [videoStarted, setVideoStarted] = useState(false);
     const [videoEnded, setVideoEnded] = useState(false);
 
-    const [leaving,setLeaving] = useState(false);
+    const [leaving, setLeaving] = useState(false);
     function handleExplore() {
         setLeaving(true);
-        setTimeout(()=>{
+        setTimeout(() => {
             onExplore();
-        },800)
+        }, 800)
     }
     return (
         <div className={`landing-page ${leaving ? "leaving" : ""}`}>
@@ -20,7 +20,9 @@ function LandingPage({ onExplore }) {
                 onPlay={() => setVideoStarted(true)}
                 onEnded={() => setVideoEnded(true)}
             ><source src="/campus-intro.mp4" type="video/mp4" /></video>
-
+            <div
+                className={`video-vignette ${videoEnded ? "visible" : ""}`}
+            />
             <div className={`welcome-text ${videoStarted ? "show" : ""
                 } ${videoEnded ? "hide" : ""}`}>
                 <h1>
@@ -28,14 +30,22 @@ function LandingPage({ onExplore }) {
                     Chitkara University
                 </h1>
             </div>
-            <div className={`landing-final ${
-                videoEnded ? "show" : ""
+            <div className={`landing-final ${videoEnded ? "show" : ""
                 }`}>
-                    <p>
-                        Explore. Experience. Navigate.
-                    </p>
-                    <button onClick={handleExplore}>Explore Campus</button>
-                </div>
+                <p id="landing-tagline">
+                    Explore. Experience. Navigate.
+                </p>
+                <h2>
+                    Discover Chitkara
+                </h2>
+                <p id="landing-subtitle">
+                    Your campus. Your journey. Your experience.
+                </p>
+                <br />
+                <button id="landing-explore-btn" onClick={handleExplore}>Explore Campus 
+                    <i className="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
         </div>
     );
 }

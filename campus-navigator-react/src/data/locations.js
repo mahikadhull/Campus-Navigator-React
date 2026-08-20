@@ -31,6 +31,65 @@ export const locations = [
 
     },
     {
+        id: "explore-hub",
+        name: "Explore Hub",
+        category: "academic",
+        type: "building",
+        description: "The main and only library of the campus.",
+        schedule: {
+            weekdays: {
+                open: "09:00",
+                close: "19:00"
+            },
+            weekends: {
+                open: "09:00",
+                close: "21:30"
+            }
+        },
+        access: [
+            "Students",
+            "Faculty",
+            "Staff"
+        ],
+        facilities: [
+            "Reading Area",
+            "Computer Lab",
+            "Wi-Fi",
+            "Sitting Area",
+            "Property Area"
+        ]
+
+    },
+    {
+        id: "moon-hall",
+        name: "Moon Hall",
+        category: "academic",
+        type: "building",
+        description: "The main and only library of the campus.",
+        schedule: {
+            weekdays: {
+                open: "08:00",
+                close: "17:00"
+            },
+            weekends: {
+                closed:true
+            }
+        },
+        access: [
+            "Students",
+            "Faculty",
+            "Staff"
+        ],
+        facilities: [
+            "Reading Area",
+            "Computer Lab",
+            "Wi-Fi",
+            "Sitting Area",
+            "Property Area"
+        ]
+
+    },
+    {
         id: "martin-luther",
         name: "Martin Luther Block",
         category: "academic",
@@ -67,8 +126,8 @@ export const locations = [
         description: "It is a major academic building and an award-winning green infrastructure project that hosts coding cups, student activities and sustainability programs",
         schedule: {
             weekdays: {
-                open: "00:00",
-                close: "24:00"
+                open: "07:00",
+                close: "21:30"
             },
             weekends: {
                 closed: true
@@ -96,8 +155,8 @@ export const locations = [
         description: "Academic block containing classrooms, lecture halls, and faculty offices for CSE (core) department.",
         schedule: {
             weekdays: {
-                open: "00:00",
-                close: "24:00"
+                open: "07:00",
+                close: "21:30"
             },
             weekends: {
                 closed: true
@@ -125,8 +184,8 @@ export const locations = [
         description: "Academic block containing classrooms, lecture halls, and faculty offices for ECE department.",
         schedule: {
             weekdays: {
-                open: "00:00",
-                close: "24:00"
+                open: "07:00",
+                close: "17:30"
             },
             weekends: {
                 closed: true
@@ -183,8 +242,8 @@ export const locations = [
         description: "Academic block containing classrooms, lecture halls, and faculty offices for Hospitality Management Departments.",
         schedule: {
             weekdays: {
-                open: "00:00",
-                close: "24:00"
+                open: "08:00",
+                close: "17:30"
             },
             weekends: {
                 closed: true
@@ -243,7 +302,7 @@ export const locations = [
         schedule: {
             weekdays: {
                 open: "07:00",
-                close: "16:00"
+                close: "17:00"
             },
             weekends: {
                 closed: true
@@ -272,7 +331,7 @@ export const locations = [
         schedule: {
             weekdays: {
                 open: "07:00",
-                close: "4:00"
+                close: "17:00"
             },
             weekends: {
                 closed: true
@@ -301,8 +360,8 @@ export const locations = [
         description: "Maritime Studies School.",
         schedule: {
             weekdays: {
-                open: "00:00",
-                close: "24:00"
+                open: "07:00",
+                close: "17:30"
             },
             weekends: {
                 open: "06:00",
@@ -389,8 +448,8 @@ export const locations = [
         description: "This block serves as the primary hub for Chitkara Design School and Chitkara School of Mass Communication.",
         schedule: {
             weekdays: {
-                open: "00:00",
-                close: "24:00"
+                open: "08:00",
+                close: "17:30"
             },
             weekends: {
                 closed: true
@@ -421,8 +480,8 @@ export const locations = [
         description: "Fine arts displays and printmaking exhibitions",
         schedule: {
             weekdays: {
-                open: "00:00",
-                close: "24:00"
+                open: "09:00",
+                close: "17:00"
             },
             weekends: {
                 closed: true
@@ -451,8 +510,8 @@ export const locations = [
         description: "Academic block hosting academic classes, design workshops and expert talks for the Chitkara School of Planning and Architecture.",
         schedule: {
             weekdays: {
-                open: "00:00",
-                close: "24:00"
+                open: "08:00",
+                close: "17:30"
             },
             weekends: {
                 closed: true
@@ -700,6 +759,36 @@ export const locations = [
         ]
     },
     {
+        id: "health-care",
+        name: "Health Care",
+        category: "health",
+        type: "building",
+        description: "The main and only library of the campus.",
+        schedule: {
+            weekdays: {
+                open: "00:00",
+                close: "24:00"
+            },
+            weekends: {
+                open: "06:00",
+                close: "21:30"
+            }
+        },
+        access: [
+            "Students",
+            "Faculty",
+            "Staff"
+        ],
+        facilities: [
+            "Reading Area",
+            "Computer Lab",
+            "Wi-Fi",
+            "Sitting Area",
+            "Property Area"
+        ]
+
+    },
+    {
         id: "admission-block",
         name: "Admission Block",
         category: "administration",
@@ -733,109 +822,163 @@ export const locations = [
         ]
     },
     // Hostels -- Girls
-    createHostel("pi-hostel","Pi Hostel","Girls"),
-    createHostel("IBN-hostel","IBN Hostel","Girls"),
-    createHostel("NGH-hostel","NGH Hostel","Girls"),
-    createHostel("vasco-hostel","Vasco da Gama Hostel","Girls"),
-    createHostel("columbus-hostel","Columbus Hostel","Girls"),
+    createHostel("pi-hostel", "Pi Hostel", "Girls"),
+    createHostel("IBN-hostel", "IBN Hostel", "Girls"),
+    createHostel("NGH-hostel", "NGH Hostel", "Girls"),
+    createHostel("vasco-hostel", "Vasco da Gama Hostel", "Girls"),
+    createHostel("columbus-hostel", "Columbus Hostel", "Girls"),
     // Hostel -- Boys
-    createHostel("armstrong-hostel","Armstrong Hostel","Boys"),
-    createHostel("archemedes-hostel","Archemedes Hostel","Boys"),
-    createHostel("aristotle-hostel","Aristotle Hostel","Boys"),
-    createHostel("alfred-nobel-hostel","Alfred Nobel Hostel","Boys"),
-    createHostel("franklin-hostel","Franklin Hostel","Boys"),
-    createHostel("magallen-hostel","Magallen Hostel","Boys"),
-    createHostel("marco-polo-hostel","Marco Polo Hostel","Boys"),
+    createHostel("armstrong-hostel", "Armstrong Hostel", "Boys"),
+    createHostel("archemedes-hostel", "Archemedes Hostel", "Boys"),
+    createHostel("aristotle-hostel", "Aristotle Hostel", "Boys"),
+    createHostel("alfred-nobel-hostel", "Alfred Nobel Hostel", "Boys"),
+    createHostel("franklin-hostel", "Franklin Hostel", "Boys"),
+    createHostel("magallen-hostel", "Magallen Hostel", "Boys"),
+    createHostel("marco-polo-hostel", "Marco Polo Hostel", "Boys"),
 
     // Food areas
-    createFoodOutlet("square-2","Square-2"),
-    createFoodOutlet("square-1","Square-1"),
-    createFoodOutlet("grab-go","Grab & Go"),
-    createFoodOutlet("belgian-waffel","The Belgian Waffel"),
-    createFoodOutlet("bev-cafe","Bev Cafe"),
-    createFoodOutlet("holy-scoop","The Holy Scoop"),
-    createFoodOutlet("first-coffee","First Coffee"),
-    createFoodOutlet("subway","Subway"),
-    createFoodOutlet("doful","Doful"),
-    createFoodOutlet("amul","Amul"),
-    createFoodOutlet("blue-tokai","Blue Tokai"),
-    createFoodOutlet("chai-vyanjan","Chai Vyanjan"),
-    createFoodOutlet("haveli","The Haveli"),
-    createFoodOutlet("dhaba","The Indian Dhaba")
+    createFoodOutlet("square-2", "Square-2"),
+    createFoodOutlet("square-1", "Square-1"),
+    createFoodOutlet("grab-go", "Grab & Go"),
+    createFoodOutlet("belgian-waffel", "The Belgian Waffel"),
+    createFoodOutlet("bev-cafe", "Bev Cafe"),
+    createFoodOutlet("holy-scoop", "The Holy Scoop"),
+    createFoodOutlet("first-coffee", "First Coffee"),
+    createFoodOutlet("subway", "Subway"),
+    createFoodOutlet("doful", "Doful"),
+    createFoodOutlet("amul", "Amul"),
+    createFoodOutlet("blue-tokai", "Blue Tokai"),
+    createFoodOutlet("chai-vyanjan", "Chai Vyanjan"),
+    createFoodOutlet("haveli", "The Haveli"),
+    createFoodOutlet("dhaba", "The Indian Dhaba"),
+
+    // Parkings
+
+    createParking("parking-chaivyanjan","Car Parking"),
+    createParking("parking-maingate","Car Parking"),
+    createParking("parking-turing","Two-Wheeler Parking"),
+    createParking("parking-omega","Parking"),
+    createParking("parking-bus","Bus Parking"),
+    createParking("parking-chaivyanjan-left","Car Parking"),
+    createParking("parking-chaivyanjan-car","Car Parking"),
+
+    // Parks
+    createGround("beta-zone","Beta Zone"),
+    createGround("chsf-park","CHSF Park"),
+    createGround("chitkara-woods","Chitkara Woods"),
+    createGround("chitkara-university-a","Chitkara University"),
+    createGround("chitkara-university-b","Chitkara University"),
+    createGround("park-of-scluptures","Park of Scluptures")
 ];
 
 function createHostel(id, name, gender) {
-        return {
-            id,
-            name,
-            category: "hostel",
-            type: "building",
+    return {
+        id,
+        name,
+        category: "hostel",
+        type: "building",
 
-            description: `${gender} student hostel providing residential accommodation.`,
+        description: `${gender} student hostel providing residential accommodation.`,
 
-            schedule: {
-                weekdays: {
-                    open: "00:00",
-                    close: "24:00"
-                },
-                weekends: {
-                    open: "00:00",
-                    close: "24:00"
-                }
+        schedule: {
+            weekdays: {
+                open: "00:00",
+                close: "24:00"
             },
+            weekends: {
+                open: "00:00",
+                close: "24:00"
+            }
+        },
 
-            access: ["Residents", "Staff"],
+        access: ["Residents", "Staff"],
 
-            facilities: [
-                "Rooms",
-                "Common Area",
-                "Wi-Fi",
-                "Laundry",
-                "Washrooms"
-            ]
-        };
-    }
+        facilities: [
+            "Rooms",
+            "Common Area",
+            "Wi-Fi",
+            "Laundry",
+            "Washrooms"
+        ]
+    };
+}
 
 function createParking(id, name) {
-        return {
-            id,
-            name,
-            category: "parking",
-            type: "parking",
+    return {
+        id,
+        name,
+        category: "parking",
+        type: "parking",
 
-            description: "Parking area for students, faculty, and visitors.",
+        description: "Parking area for students, faculty, and visitors.",
+        schedule: {
+            weekdays: {
+                open: "00:00",
+                close: "24:00"
+            },
+            weekends: {
+                open: "00:00",
+                close: "24:00"
+            }
+        },
 
-            access: ["Students", "Faculty", "Staff", "Visitors"],
+        access: ["Students", "Faculty", "Staff", "Visitors"],
 
-            facilities: [
-                "Two-Wheeler Parking",
-                "Four-Wheeler Parking"
-            ]
-        };
+        facilities: [
+            "Two-Wheeler Parking",
+            "Four-Wheeler Parking"
+        ]
+    };
 }
 
 function createFoodOutlet(id, name) {
-        return {
-            id,
-            name,
-            category: "food",
-            type: "restaurant",
-            schedule: {
-                weekdays: {
-                    open: "00:00",
-                    close: "24:00"
-                },
-                weekends: {
-                    open: "00:00",
-                    close: "24:00"
-                }
+    return {
+        id,
+        name,
+        category: "food",
+        type: "restaurant",
+        schedule: {
+            weekdays: {
+                open: "00:00",
+                close: "24:00"
             },
+            weekends: {
+                open: "00:00",
+                close: "24:00"
+            }
+        },
 
-            description: "Food outlet serving meals and refreshments.",
+        description: "Food outlet serving meals and refreshments.",
 
-            access: ["Students", "Faculty", "Staff", "Visitors"]
-        };
+        access: ["Students", "Faculty", "Staff", "Visitors"]
+    };
 }
+
+function createGround(id,name) {
+    return {
+        id,
+        name,
+        category: "ground",
+        type: "ground",
+        schedule: {
+            weekdays: {
+                open: "00:00",
+                close: "24:00"
+            },
+            weekends: {
+                open: "00:00",
+                close: "24:00"
+            }
+        },
+
+        description: "Food outlet serving meals and refreshments.",
+
+        access: ["Students", "Faculty", "Staff", "Visitors"]
+    }
+}
+
+
+
 
 
 
