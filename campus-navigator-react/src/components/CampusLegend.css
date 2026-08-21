@@ -1,6 +1,7 @@
-/* =========================================
-   CAMPUS LEGEND OVERLAY
-========================================= */
+/* =========================================================
+   CAMPUS LEGEND
+   SAME THEME AS MAIN WEBSITE
+========================================================= */
 
 .campus-legend-overlay {
     position: fixed;
@@ -15,9 +16,9 @@
 
     padding: 24px;
 
-    background: rgba(15, 25, 22, 0.58);
-
+    background: rgba(25, 58, 58, 0.45);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 
     z-index: 9999;
 
@@ -25,27 +26,27 @@
 }
 
 
-/* =========================================
+/* =========================================================
    MAIN MODAL
-========================================= */
+========================================================= */
 
 .campus-legend-modal {
     position: relative;
 
     width: min(900px, 100%);
-
     max-height: 90vh;
 
     overflow-y: auto;
 
-    padding: 38px;
+    padding: 34px;
 
-    border-radius: 28px;
+    border: 1px solid var(--border);
+    border-radius: 24px;
 
-    background: #ffffff;
+    background: var(--surface);
 
     box-shadow:
-        0 30px 80px rgba(0, 0, 0, 0.25);
+        0 25px 70px rgba(25, 58, 58, 0.20);
 
     animation: legendModalIn 0.3s ease;
 }
@@ -62,33 +63,31 @@
 }
 
 .campus-legend-modal::-webkit-scrollbar-thumb {
-    background: #cbd8d1;
+    background: var(--border);
     border-radius: 20px;
 }
 
 
-/* =========================================
+/* =========================================================
    CLOSE BUTTON
-========================================= */
+========================================================= */
 
 .legend-close-btn {
     position: absolute;
 
-    top: 20px;
-    right: 20px;
+    top: 18px;
+    right: 18px;
 
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
 
-    border: none;
-
+    border: 1px solid var(--border);
     border-radius: 50%;
 
-    background: #f1f5f3;
+    background: var(--map-surface);
+    color: var(--text-primary);
 
-    color: #26332f;
-
-    font-size: 28px;
+    font-size: 22px;
 
     display: flex;
     align-items: center;
@@ -98,36 +97,39 @@
 
     transition:
         background 0.2s ease,
-        transform 0.2s ease;
+        transform 0.2s ease,
+        border-color 0.2s ease;
 }
 
 .legend-close-btn:hover {
-    background: #e2ebe6;
+    background: var(--heading);
+    color: white;
+
+    border-color: var(--heading);
 
     transform: rotate(90deg);
 }
 
 
-/* =========================================
+/* =========================================================
    HEADER
-========================================= */
+========================================================= */
 
 .legend-header {
     display: flex;
-
     align-items: center;
 
-    gap: 20px;
+    gap: 18px;
 
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 
-    padding-right: 60px;
+    padding-right: 55px;
 }
 
 
 .legend-header-icon {
-    width: 68px;
-    height: 68px;
+    width: 62px;
+    height: 62px;
 
     flex-shrink: 0;
 
@@ -135,39 +137,39 @@
     align-items: center;
     justify-content: center;
 
-    border-radius: 20px;
+    border-radius: 18px;
 
-    background: #edf7f1;
+    background: #E8F2EC;
+    border: 1px solid #D5E4DA;
 
-    font-size: 36px;
+    font-size: 32px;
 }
 
 
 .legend-header h2 {
-    margin: 0 0 6px;
+    margin: 0 0 5px;
 
-    font-size: 34px;
-
+    font-size: 32px;
     font-weight: 800;
 
-    color: #1f2d28;
+    color: var(--heading);
 
-    letter-spacing: -1px;
+    letter-spacing: -0.7px;
 }
 
 
 .legend-header p {
     margin: 0;
 
-    color: #78837f;
+    color: var(--text-muted);
 
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
-/* =========================================
+/* =========================================================
    LEGEND GRID
-========================================= */
+========================================================= */
 
 .legend-grid {
     display: grid;
@@ -175,33 +177,33 @@
     grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
-    gap: 14px;
+    gap: 13px;
 }
 
 
-/* =========================================
+/* =========================================================
    LEGEND CARD
-========================================= */
+========================================================= */
 
 .legend-card {
     position: relative;
 
     width: 100%;
-
-    min-height: 92px;
+    min-height: 86px;
 
     display: flex;
     align-items: center;
 
-    gap: 16px;
+    gap: 15px;
 
-    padding: 16px;
+    padding: 15px;
 
-    border: 1px solid #dce5e0;
+    border: 1px solid var(--border);
+    border-radius: 16px;
 
-    border-radius: 17px;
+    background: var(--map-surface);
 
-    background: #fbfcfc;
+    color: var(--text-primary);
 
     text-align: left;
 
@@ -214,31 +216,29 @@
         background 0.2s ease;
 }
 
-
 .legend-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 
-    background: #ffffff;
+    background: var(--surface);
 
-    border-color: #9fc9b0;
+    border-color: #A8C9B5;
 
     box-shadow:
-        0 12px 28px rgba(23, 95, 57, 0.10);
+        0 10px 25px rgba(25, 58, 58, 0.10);
 }
-
 
 .legend-card:active {
     transform: scale(0.98);
 }
 
 
-/* =========================================
+/* =========================================================
    CARD ICON
-========================================= */
+========================================================= */
 
 .legend-card-icon {
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
 
     flex-shrink: 0;
 
@@ -246,62 +246,63 @@
     align-items: center;
     justify-content: center;
 
-    border-radius: 15px;
+    border-radius: 14px;
 
-    background: #ffffff;
+    background: white;
 
-    font-size: 27px;
+    border: 1px solid var(--border);
+
+    font-size: 25px;
 
     box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.06);
+        0 4px 12px rgba(25, 58, 58, 0.06);
 }
 
 
-/* =========================================
+/* =========================================================
    CARD CONTENT
-========================================= */
+========================================================= */
 
 .legend-card-content {
     display: flex;
-
     flex-direction: column;
 
-    gap: 5px;
+    gap: 4px;
 
-    padding-right: 24px;
+    padding-right: 25px;
 }
 
 
 .legend-card-title {
-    font-size: 17px;
+    font-size: 16px;
 
     font-weight: 750;
 
-    color: #26332f;
+    color: var(--heading);
 }
 
 
 .legend-card-description {
-    font-size: 13px;
+    font-size: 12px;
 
     line-height: 1.4;
 
-    color: #7a8581;
+    color: var(--text-muted);
 }
 
 
-/* =========================================
+/* =========================================================
    CARD ARROW
-========================================= */
+========================================================= */
 
 .legend-card-arrow {
     position: absolute;
 
-    right: 16px;
+    right: 15px;
 
-    color: #8c9994;
+    color: var(--text-accent);
 
-    font-size: 19px;
+    font-size: 18px;
 
     opacity: 0;
 
@@ -312,7 +313,6 @@
         transform 0.2s ease;
 }
 
-
 .legend-card:hover .legend-card-arrow {
     opacity: 1;
 
@@ -320,20 +320,20 @@
 }
 
 
-/* =========================================
+/* =========================================================
    CATEGORY DETAIL
-========================================= */
+========================================================= */
 
 .legend-detail {
     position: relative;
 
-    padding: 40px 30px;
+    padding: 36px 28px;
 
-    border-radius: 22px;
+    border-radius: 20px;
 
-    background: #f6faf8;
+    background: var(--map-surface);
 
-    border: 1px solid #dce9e2;
+    border: 1px solid var(--border);
 
     text-align: center;
 
@@ -342,75 +342,76 @@
 
 
 .legend-detail-icon {
-    width: 90px;
-    height: 90px;
+    width: 82px;
+    height: 82px;
 
-    margin: 0 auto 18px;
+    margin: 0 auto 16px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border-radius: 24px;
+    border-radius: 22px;
 
-    background: #ffffff;
+    background: white;
 
-    font-size: 48px;
+    border: 1px solid var(--border);
+
+    font-size: 44px;
 
     box-shadow:
-        0 8px 22px rgba(0, 0, 0, 0.08);
+        0 8px 20px rgba(25, 58, 58, 0.08);
 }
 
 
 .legend-detail h3 {
     margin: 0 0 8px;
 
-    font-size: 27px;
+    font-size: 26px;
 
-    color: #20302a;
+    color: var(--heading);
 }
 
 
 .legend-detail-description {
-    margin: 0 0 16px;
+    margin: 0 0 15px;
 
-    color: #52625c;
+    color: var(--text-accent);
 
-    font-size: 15px;
+    font-size: 14px;
 
-    font-weight: 600;
+    font-weight: 650;
 }
 
 
 .legend-detail-info {
     max-width: 650px;
 
-    margin: 0 auto 24px;
+    margin: 0 auto 22px;
 
-    font-size: 15px;
+    font-size: 14px;
 
     line-height: 1.7;
 
-    color: #707d78;
+    color: var(--text-secondary);
 }
 
 
-/* =========================================
+/* =========================================================
    BACK BUTTON
-========================================= */
+========================================================= */
 
 .legend-back-btn {
-    padding: 11px 20px;
+    padding: 10px 19px;
 
     border: none;
+    border-radius: 10px;
 
-    border-radius: 11px;
-
-    background: #146b3a;
+    background: var(--heading);
 
     color: white;
 
-    font-size: 14px;
+    font-size: 13px;
 
     font-weight: 700;
 
@@ -421,32 +422,30 @@
         transform 0.2s ease;
 }
 
-
 .legend-back-btn:hover {
-    background: #0e572f;
+    background: #234E4E;
 
     transform: translateY(-2px);
 }
 
 
-/* =========================================
+/* =========================================================
    DIVIDER
-========================================= */
+========================================================= */
 
 .legend-divider {
     width: 100%;
-
     height: 1px;
 
-    margin: 28px 0;
+    margin: 26px 0;
 
-    background: #e4ebe7;
+    background: var(--border);
 }
 
 
-/* =========================================
+/* =========================================================
    FEATURES
-========================================= */
+========================================================= */
 
 .legend-features {
     display: grid;
@@ -454,29 +453,29 @@
     grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
-    gap: 16px;
+    gap: 14px;
 }
 
 
-/* =========================================
+/* =========================================================
    FEATURE BOX
-========================================= */
+========================================================= */
 
 .feature-box {
-    padding: 20px;
+    padding: 18px;
 
-    border-radius: 18px;
+    border-radius: 16px;
 
-    border: 1px solid #dce5e0;
+    border: 1px solid var(--border);
 
-    background: #fafcfb;
+    background: var(--map-surface);
 
-    min-height: 150px;
+    min-height: 145px;
 }
 
 
 .feature-icon {
-    font-size: 30px;
+    font-size: 28px;
 
     margin-bottom: 8px;
 }
@@ -485,37 +484,37 @@
 .feature-content h3 {
     margin: 0 0 4px;
 
-    font-size: 18px;
+    font-size: 17px;
 
-    color: #26332f;
+    color: var(--heading);
 }
 
 
 .feature-content p {
-    margin: 0 0 15px;
+    margin: 0 0 14px;
 
-    font-size: 13px;
+    font-size: 12px;
 
-    color: #78837f;
+    color: var(--text-muted);
 }
 
 
-/* =========================================
+/* =========================================================
    FEATURE BUTTON
-========================================= */
+========================================================= */
 
 .feature-btn {
-    padding: 10px 16px;
+    padding: 9px 15px;
 
     border: none;
 
-    border-radius: 10px;
+    border-radius: 9px;
 
-    background: #146b3a;
+    background: var(--heading);
 
     color: white;
 
-    font-size: 13px;
+    font-size: 12px;
 
     font-weight: 700;
 
@@ -526,33 +525,32 @@
         transform 0.2s ease;
 }
 
-
 .feature-btn:hover {
-    background: #0e572f;
+    background: #234E4E;
 
     transform: translateY(-2px);
 }
 
 
-/* =========================================
+/* =========================================================
    QUIZ
-========================================= */
+========================================================= */
 
 .quiz-container {
-    margin-top: 16px;
+    margin-top: 15px;
 
-    padding-top: 16px;
+    padding-top: 15px;
 
-    border-top: 1px solid #e2e9e5;
+    border-top: 1px solid var(--border);
 
     animation: detailIn 0.25s ease;
 }
 
 
 .quiz-progress {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 
-    color: #146b3a;
+    color: var(--text-accent);
 
     font-size: 12px;
 
@@ -561,13 +559,13 @@
 
 
 .quiz-question {
-    margin: 0 0 15px;
+    margin: 0 0 14px;
 
     font-size: 15px;
 
     line-height: 1.5;
 
-    color: #293630;
+    color: var(--text-primary);
 }
 
 
@@ -584,26 +582,29 @@
 .quiz-option {
     padding: 10px;
 
-    border: 1px solid #d7e1dc;
+    border: 1px solid var(--border);
 
     border-radius: 9px;
 
-    background: white;
+    background: var(--surface);
 
-    color: #34423c;
+    color: var(--text-primary);
 
     cursor: pointer;
 
     font-size: 13px;
 
-    transition: 0.2s ease;
+    transition:
+        0.2s ease;
 }
 
 
 .quiz-option:hover:not(:disabled) {
-    border-color: #79ae90;
+    border-color: #9BBFDD;
 
-    background: #f0f8f3;
+    background: #F0F6F2;
+
+    transform: translateY(-1px);
 }
 
 
@@ -613,20 +614,20 @@
 
 
 .quiz-option.correct {
-    border-color: #54a878;
+    border-color: #54A878;
 
-    background: #dff3e7;
+    background: #DFF3E7;
 
     color: #176238;
 }
 
 
 .quiz-option.wrong {
-    border-color: #df7474;
+    border-color: #DF7474;
 
-    background: #fde6e6;
+    background: #FDE6E6;
 
-    color: #a52d2d;
+    color: #A52D2D;
 }
 
 
@@ -644,16 +645,16 @@
 
 
 .quiz-feedback.correct {
-    background: #e2f5e9;
+    background: #E2F5E9;
 
     color: #176238;
 }
 
 
 .quiz-feedback.wrong {
-    background: #fde7e7;
+    background: #FDE7E7;
 
-    color: #a52d2d;
+    color: #A52D2D;
 }
 
 
@@ -662,13 +663,13 @@
 
     font-size: 12px;
 
-    color: #78837f;
+    color: var(--text-muted);
 }
 
 
-/* =========================================
+/* =========================================================
    SURPRISE BOX
-========================================= */
+========================================================= */
 
 .surprise-box {
     position: relative;
@@ -678,18 +679,17 @@
 
 
 .surprise-btn {
-    background: #7a4bb5;
+    background: var(--heading);
 }
-
 
 .surprise-btn:hover {
-    background: #63379b;
+    background: #234E4E;
 }
 
 
-/* =========================================
+/* =========================================================
    SURPRISE RESULT
-========================================= */
+========================================================= */
 
 .surprise-result {
     margin-top: 16px;
@@ -698,13 +698,14 @@
 
     border-radius: 14px;
 
-    background: linear-gradient(
-        135deg,
-        #f6efff,
-        #ffffff
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #EAF4EE,
+            var(--surface)
+        );
 
-    border: 1px solid #dfd0f1;
+    border: 1px solid #C9DED1;
 
     animation: surpriseIn 0.3s ease;
 }
@@ -715,7 +716,7 @@
 
     margin-bottom: 7px;
 
-    color: #79549d;
+    color: var(--text-accent);
 
     font-size: 12px;
 
@@ -726,7 +727,7 @@
 .surprise-result h4 {
     margin: 0 0 5px;
 
-    color: #342642;
+    color: var(--heading);
 
     font-size: 18px;
 }
@@ -737,11 +738,15 @@
 
     margin-bottom: 13px;
 
-    color: #81758b;
+    color: var(--text-muted);
 
     font-size: 12px;
 }
 
+
+/* =========================================================
+   SEARCH LOCATION BUTTON
+========================================================= */
 
 .search-location-btn {
     padding: 9px 14px;
@@ -750,7 +755,7 @@
 
     border-radius: 9px;
 
-    background: #342642;
+    background: var(--heading);
 
     color: white;
 
@@ -760,20 +765,22 @@
 
     cursor: pointer;
 
-    transition: 0.2s ease;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
 }
 
 
 .search-location-btn:hover {
-    background: #4c3262;
+    background: #234E4E;
 
     transform: translateY(-1px);
 }
 
 
-/* =========================================
+/* =========================================================
    ANIMATIONS
-========================================= */
+========================================================= */
 
 @keyframes legendOverlayIn {
 
@@ -839,9 +846,9 @@
 }
 
 
-/* =========================================
+/* =========================================================
    TABLET
-========================================= */
+========================================================= */
 
 @media (max-width: 700px) {
 
@@ -871,9 +878,9 @@
 }
 
 
-/* =========================================
+/* =========================================================
    MOBILE
-========================================= */
+========================================================= */
 
 @media (max-width: 480px) {
 
@@ -884,6 +891,7 @@
     .campus-legend-modal {
         width: 100%;
         height: 100%;
+
         max-height: 100vh;
 
         border-radius: 0;
@@ -921,7 +929,7 @@
         top: 14px;
         right: 14px;
 
-        font-size: 23px;
+        font-size: 20px;
     }
 
     .legend-card {
@@ -956,5 +964,4 @@
     .legend-detail {
         padding: 28px 18px;
     }
-
 }
