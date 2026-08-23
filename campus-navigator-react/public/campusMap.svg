@@ -7,10 +7,9 @@
 <rect id="apple-experience" class="location" x="465.293" y="483.682" width="16" height="20" fill="#FFE082"/>
 <rect id="salon" class="location" x="478.293" y="440.682" width="5" height="9" fill="#FFE082"/>
 <rect id="ATM" class="location" x="478.293" y="430.682" width="5" height="9" fill="#FFE082"/>
-<g id="sports-building" class="location">
-<rect x="197.293" y="332.682" width="118" height="26" fill="#DDF5E5"/>
-<rect x="219.293" y="352.682" width="66" height="28" fill="#DDF5E5"/>
-</g>
+<rect id="sports-building" class="location" x="197.293" y="332.682" width="118" height="26" fill="#DDF5E5"/>
+
+<rect id="ramanujan-block" class="location" x="219.293" y="352.682" width="66" height="28" fill="#DCEEFF"/>
 <rect id="sports-area" class="location" x="185.616" y="273.564" width="139" height="39" transform="rotate(0.923913 185.616 273.564)" fill="#DDF5E5"/>
 <!-- Hostels -->
 <rect id="armstrong-hostel" class="location hostel"  x="591.293" y="650.682" width="57" height="17" fill="#EFE3FF"/>

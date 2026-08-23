@@ -1,4 +1,3 @@
-
 :root {
     /* Background colors */
     --surface: #F8FAF7;
@@ -50,7 +49,7 @@
     --surface: #1A1F1C;
     --border: #343C38;
     --map-surface: #141916;
-    --btn-on-dark:rgb(29, 57, 40);
+    --btn-on-dark: rgb(29, 57, 40);
     --text-primary: #E8EFEB;
     --text-secondary: #d1e0da;
     --text-muted: #cfdfd7;
@@ -123,7 +122,7 @@ nav {
 }
 
 .location {
-     transition:
+    transition:
         opacity 0.35s ease,
         fill 0.35s ease,
         stroke 0.5s ease,
@@ -142,16 +141,15 @@ nav {
     stroke-width: 3px;
     filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.3));
 }
- .location.selected-building {
+
+.location.selected-building {
     fill: var(--selected-fill);
     opacity: 0.8;
     stroke: var(--selected-stroke);
     stroke-width: 3px;
-     filter:
-        drop-shadow(0 0 1px var(--selected-stroke))
-        drop-shadow(0 0 1px var(--selected-stroke))
-        drop-shadow(0 0 1px var(--selected-stroke));
- }
+    filter:
+        drop-shadow(0 0 1px var(--selected-stroke)) drop-shadow(0 0 1px var(--selected-stroke)) drop-shadow(0 0 1px var(--selected-stroke));
+}
 
 
 /* Logo boxx.. */
@@ -167,7 +165,7 @@ nav {
     cursor: pointer;
     border: none;
     background: transparent;
-    color: var(--text-accent);  
+    color: var(--text-accent);
     transform: none;
 }
 
@@ -225,7 +223,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    background:var(--surface);
+    background: var(--surface);
 }
 
 #mobile-menu.open {
@@ -238,12 +236,14 @@ nav {
     border: none;
     background: transparent;
     color: var(--text-muted);
-    transition: transform 0.5s ease,color 0.5s ease;
+    transition: transform 0.5s ease, color 0.5s ease;
 }
-#mobile-menu button:hover{
+
+#mobile-menu button:hover {
     transform: translateX(-5px);
     color: var(--text-primary);
 }
+
 main {
     position: relative;
     display: flex;
@@ -323,6 +323,7 @@ main {
     height: 100%;
     max-width: 100%;
     max-height: 100%;
+    object-fit: contain;
     border: 2px solid var(--border);
     border-radius: 12px;
     padding: 0;
@@ -392,9 +393,10 @@ main {
 
     z-index: 40;
 }
-.info-tags span{
+
+.info-tags span {
     color: var(--text-primary);
-    font-size: clamp(12px,1.5vw,24px);
+    font-size: clamp(12px, 1.5vw, 24px);
 }
 
 /* Toggle button */
@@ -408,9 +410,10 @@ main {
     cursor: pointer;
     color: var(--text-primary);
     background: var(--surface);
-    border-bottom:none;
+    border-bottom: none;
 }
-#info-toggle-btn:hover{
+
+#info-toggle-btn:hover {
     transform: translateY(-5px);
 }
 
@@ -440,14 +443,33 @@ main {
 
 
 /* OPEN */
+
 #info-content.open {
-    max-height: 70vh;
-
+    max-height: calc(100vh - 120px);
     padding: clamp(8px, 1.5vw, 16px);
-
     border: 2px solid var(--border);
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
+/*location-image*/
+.location-image {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 14px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid var(--border);
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
 
 #info-content h2 {
     color: var(--text-primary);
@@ -609,7 +631,7 @@ main {
 }
 
 
-   /* CLOSE BUTTON */
+/* CLOSE BUTTON */
 
 #close-modal {
     position: absolute;
@@ -654,7 +676,7 @@ main {
 }
 
 
-   /* ABOUT CONTENT */
+/* ABOUT CONTENT */
 
 #modal-body {
     text-align: center;
@@ -713,7 +735,7 @@ main {
 }
 
 
-   /* DECORATIVE DIVIDER */
+/* DECORATIVE DIVIDER */
 
 #modal-body h3::after {
     content: "";
@@ -732,7 +754,7 @@ main {
 
 
 
-   /* ANIMATIONS */
+/* ANIMATIONS */
 
 @keyframes modalFadeIn {
 
@@ -752,16 +774,14 @@ main {
         opacity: 0;
 
         transform:
-            translateY(25px)
-            scale(0.96);
+            translateY(25px) scale(0.96);
     }
 
     to {
         opacity: 1;
 
         transform:
-            translateY(0)
-            scale(1);
+            translateY(0) scale(1);
     }
 }
 
@@ -836,18 +856,36 @@ main {
 #search-results>div:last-child {
     border-radius: 0 0 14px 14px;
 }
+
 @media (min-width:768px) {
-    #filters-container{
+    #filters-container {
         position: static;
     }
 }
 
 /* Desktops */
 @media (min-width:1024px) {
+
     main {
         position: static;
+        display: flex;
         flex-direction: row;
+        width: 100%;
+        height: calc(100vh - 120px);
+        overflow: hidden;
+    }
 
+    .map-section {
+        flex: 1;
+        min-width: 0;
+        width: 100%;
+        height: calc(100vh - 120px);
+
+        overflow: hidden;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #filters-container {
@@ -858,21 +896,67 @@ main {
         flex-direction: column;
         flex-wrap: nowrap;
     }
+
     #info-panel {
         position: static;
-        max-width: 25%;
+
+        width: 42%;
+        max-width: 42%;
+        min-width: 420px;
+
+        height: calc(100vh - 120px);
+
+        display: flex;
         flex-direction: row;
+
         transform: translateX(440px);
         transition: transform 0.5s ease;
+
+        overflow: hidden;
     }
-    #info-content{
+
+    #info-content {
         transition: none;
+
+        height: 100%;
+        max-height: calc(100vh - 120px);
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        box-sizing: border-box;
     }
+
     #info-content.open {
-        border-left:1px solid var(--border);
+        border-left: 1px solid var(--border);
         border: none;
-        height: 100vh;
+
+        height: 100%;
+        max-height: calc(100vh - 120px);
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        box-sizing: border-box;
     }
+
+    #info-content::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    #info-content::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    #info-content::-webkit-scrollbar-thumb {
+        background: var(--border);
+        border-radius: 10px;
+    }
+
+    #info-content::-webkit-scrollbar-thumb:hover {
+        background: var(--text-muted);
+    }
+
     #info-panel:has(#info-content.open) {
         transform: translateX(0);
     }
@@ -881,15 +965,18 @@ main {
         align-self: center;
         height: 100%;
         max-width: 42px;
+
         border-right: none;
         border-top: none;
         border-bottom: none;
-    } 
-    .info-up,.info-down{
-        transform: rotate(-90deg);
-    }
-    #info-toggle-btn:hover{
-        transform: translateX(-10px);
     }
 
-   }
+    .info-up,
+    .info-down {
+        transform: rotate(-90deg);
+    }
+
+    #info-toggle-btn:hover {
+        transform: translateX(-10px);
+    }
+}

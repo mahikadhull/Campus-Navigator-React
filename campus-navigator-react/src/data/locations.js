@@ -5,6 +5,8 @@ export const locations = [
         name: "Central Library",
         category: "academic",
         type: "building",
+        image: "/images/library.jpg",
+
         description: "The main library of the campus.",
         schedule: {
             weekdays: {
@@ -35,6 +37,8 @@ export const locations = [
         name: "Explore Hub",
         category: "academic",
         type: "building",
+        image: "/images/explore-hub.jpg",
+
         description: "",
         schedule: {
             weekdays: {
@@ -94,6 +98,8 @@ export const locations = [
         name: "Martin Luther Block",
         category: "academic",
         type: "building",
+        image: "/images/martin.jpg",
+
         description: "Academic block containing classrooms and faculty offices for CSE and AI & ML department.",
         schedule: {
             weekdays: {
@@ -123,6 +129,8 @@ export const locations = [
         name: "Rockefeller Block",
         category: "academic",
         type: "building",
+        image: "/images/rockefeller.jpg",
+
         description: "It is a major academic building and an award-winning green infrastructure project that hosts coding cups, student activities and sustainability programs",
         schedule: {
             weekdays: {
@@ -152,6 +160,8 @@ export const locations = [
         name: "Turing Block",
         category: "academic",
         type: "building",
+        image: "/images/turing.jpg",
+
         description: "Academic block containing classrooms, lecture halls, and faculty offices for CSE (core) department.",
         schedule: {
             weekdays: {
@@ -181,6 +191,8 @@ export const locations = [
         name: "Edison Block",
         category: "academic",
         type: "building",
+        image: "/images/edison.jpg",
+
         description: "Academic block containing classrooms, lecture halls, and faculty offices for ECE department.",
         schedule: {
             weekdays: {
@@ -211,6 +223,7 @@ export const locations = [
         name: "Newton Block",
         category: "academic",
         type: "building",
+        image: "/images/newton.jpg",
 
         description: "Academic block with classrooms, lecture halls, and laboratories.",
 
@@ -239,6 +252,8 @@ export const locations = [
         name: "Chitkara School of Hospitality Management.",
         category: "academic",
         type: "building",
+        image: "/images/escoffier.jpg",
+
         description: "Academic block containing classrooms, lecture halls, and faculty offices for Hospitality Management Departments.",
         schedule: {
             weekdays: {
@@ -268,6 +283,8 @@ export const locations = [
         name: "Chitkara College of Pharmacy/Fleming Block",
         category: "academic",
         type: "building",
+        image: "/images/pharmacy.jpg",
+
         description: "Academic block containing classrooms, lecture halls, and faculty offices for Bachelor Of Pharmacy.",
         schedule: {
             weekdays: {
@@ -298,6 +315,8 @@ export const locations = [
         name: "Chitkara Law School",
         category: "academic",
         type: "building",
+        image: "/images/law-school.jpg",
+
         description: "Academic block containing classrooms, lecture halls, and faculty offices for Department Of Law.",
         schedule: {
             weekdays: {
@@ -416,6 +435,8 @@ export const locations = [
         name: "Omicron Learning Hub",
         category: "academic",
         type: "building",
+        image: "/images/omicron.jpg",
+
         description: "Workshop for practical training in manufacturing, machining, welding, fitting and fabricatinon.",
         schedule: {
             weekdays: {
@@ -445,6 +466,8 @@ export const locations = [
         name: "Picasso Block",
         category: "academic",
         type: "building",
+        image: "/images/picasso.jpg",
+
         description: "This block serves as the primary hub for Chitkara Design School and Chitkara School of Mass Communication.",
         schedule: {
             weekdays: {
@@ -477,6 +500,8 @@ export const locations = [
         name: "D'Art Gallery",
         category: "academic",
         type: "building",
+        image: "/images/art-gallery.jpg",
+
         description: "Fine arts displays and printmaking exhibitions",
         schedule: {
             weekdays: {
@@ -504,9 +529,11 @@ export const locations = [
     },
     {
         id: "lecorbussier-block",
-        name: "Chitkara School of Planning and Architecture",
+        name: "Chitkara School of Planning and Architecture/Le Corbusier Block",
         category: "academic",
         type: "building",
+        image: "/images/le-corbusier.jpg",
+
         description: "Academic block hosting academic classes, design workshops and expert talks for the Chitkara School of Planning and Architecture.",
         schedule: {
             weekdays: {
@@ -536,6 +563,8 @@ export const locations = [
         name: "Pythagoras Block",
         category: "academic",
         type: "building",
+        image: "/images/pythagoras.jpg",
+
         description: "The Pythagoras Block at Chitkara University is an academic building where engineering and computer science classes, technical workshops, coding club recruitment events, and major programming exams take place.",
         schedule: {
             weekdays: {
@@ -565,6 +594,7 @@ export const locations = [
         name: "Bloom Block",
         category: "academic",
         type: "building",
+        image: "/images/bloom.jpg",
 
         description: "Academic block with classrooms, language learning facilities, and laboratories.",
 
@@ -592,6 +622,7 @@ export const locations = [
         name: "DeMorgan Block",
         category: "academic",
         type: "building",
+        image: "/images/de-morgan.jpg",
 
         description: "Academic block supporting teaching, learning, and research activities.",
 
@@ -647,6 +678,8 @@ export const locations = [
         category: "academic",
         type: "building",
 
+
+
         description: "Academic block supporting teaching, learning, and research activities.",
 
         schedule: {
@@ -666,13 +699,14 @@ export const locations = [
             "Laboratories",
             "Faculty Offices",
             "Wi-Fi"
-        ]
+        ],
     },
     {
         id: "galelio-block",
         name: "Galileo Block",
         category: "academic",
         type: "building",
+        image: "/images/galileo.jpg",
 
         description: "Academic block housing classrooms, laboratories, and faculty offices.",
 
@@ -698,11 +732,51 @@ export const locations = [
     },
     {
         id: "exploratorium",
-        name: "Exploratorium",
+        name: "Exploretorium",
         category: "academic",
         type: "building",
+        image: "/images/exploretorium.jpg",
 
-        description: "Academic block housing classrooms, laboratories, and faculty offices.",
+        description: "A large indoor amphitheatre-style event hall where major university events, ceremonies, performances, conferences, and other large-scale gatherings are held.",
+
+        schedule: {
+            weekdays: {
+                open: "08:00",
+                close: "21:30"
+            },
+            weekends: {
+                open: "08:00",
+                close: "21:30"
+            }
+        },
+
+        access: [
+            "Students",
+            "Faculty",
+            "Staff",
+            "Visitors"
+        ],
+
+        facilities: [
+            "Indoor Amphitheatre",
+            "Large Event Hall",
+            "Stage",
+            "Audience Seating",
+            "Audio-Visual Equipment",
+            "Sound System",
+            "Lighting System",
+            "Backstage Area",
+            "Wi-Fi"
+        ]
+    },
+    {
+        id: "ramanujan-block",
+        name: "Ramanujan Block",
+        category: "academic",
+        type: "building",
+        image: "/images/ramanujan.jpg",
+
+        description: "Academic block supporting teaching, learning, and research activities.",
 
         schedule: {
             weekdays: {
@@ -714,14 +788,87 @@ export const locations = [
             }
         },
 
-        access: ["Students", "Faculty", "Staff"],
+        access: [
+            "Students",
+            "Faculty",
+            "Staff"
+        ],
 
         facilities: [
             "Classrooms",
             "Laboratories",
-            "Faculty Offices",
+            "Lecture Halls",
             "Wi-Fi",
             "Washrooms"
+        ]
+    },
+    {
+        id: "infosys-apple",
+        name: "iOS Development Centre(powered by Infosys and Apple",
+        category: "academic",
+        type: "building",
+        image: "/images/ios-development.jpg",
+
+        description: "A technology and learning centre focused on iOS development, Apple technologies, and hands-on application development.",
+
+        schedule: {
+            weekdays: {
+                open: "09:00",
+                close: "17:30"
+            },
+            weekends: {
+                closed: true
+            }
+        },
+
+        access: [
+            "Students",
+            "Faculty",
+            "Staff"
+        ],
+
+        facilities: [
+            "iOS Development Lab",
+            "Apple Devices",
+            "Development Workstations",
+            "Training Area",
+            "Wi-Fi",
+            "Sitting Area"
+        ]
+    },
+    {
+        id: "apple-experience",
+        name: "Apple Experience Centre",
+        category: "academic",
+        type: "building",
+
+        description: "An interactive centre where students and visitors can explore and experience Apple products, devices, and technologies.",
+
+        schedule: {
+            weekdays: {
+                open: "09:00",
+                close: "17:30"
+            },
+            weekends: {
+                closed: true
+            }
+        },
+
+        access: [
+            "Students",
+            "Faculty",
+            "Staff",
+            "Visitors"
+        ],
+
+        facilities: [
+            "Apple Product Showcase",
+            "iPhone & iPad Experience Area",
+            "Mac Experience Area",
+            "Apple Accessories",
+            "Interactive Demonstrations",
+            "Wi-Fi",
+            "Seating Area"
         ]
     },
     // Administrative
@@ -731,6 +878,7 @@ export const locations = [
         name: "Chitkara Nurture Nest",
         category: "administration",
         type: "building",
+        image: "/images/nurture-nest.jpg",
 
         description: "A dedicated campus facility providing a comfortable and supportive space for parents and young children.",
 
@@ -764,6 +912,7 @@ export const locations = [
         name: "Babbage Block",
         category: "administration",
         type: "building",
+        image: "/images/babbage.jpg",
 
         description: "Administrative block providing student support services, including fee payment and financial assistance.",
 
@@ -797,6 +946,7 @@ export const locations = [
         name: "Claude Bernard Laboratory Animal Research Centre",
         category: "academic",
         type: "building",
+        image: "/images/bernard-lab.jpg",
 
         description: "Laboratory animal research centre supporting academic, scientific, and research activities.",
 
@@ -831,6 +981,8 @@ export const locations = [
         name: "Health Care",
         category: "health",
         type: "building",
+        image: "/images/dispensary.jpg",
+
         description: "The  of the campus.",
         schedule: {
             weekdays: {
@@ -859,6 +1011,7 @@ export const locations = [
         name: "Admission Block",
         category: "administration",
         type: "building",
+        image: "/images/admission.jpg",
 
         description: "Administrative building assisting prospective students with admissions, counselling, and enrollment procedures.",
 

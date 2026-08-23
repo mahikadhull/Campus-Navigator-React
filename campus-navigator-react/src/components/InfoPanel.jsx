@@ -35,7 +35,10 @@ function InfoPanel({ selectedLocation, isInfoOpen, setIsInfoOpen }) {
                         </p>
                     </>
                 ) : (
-                    <>
+                    <>{selectedLocation.image && (
+                        <img className="location-image" src={selectedLocation.image} alt={selectedLocation.name}/>
+                    )}
+
                         <h2>{selectedLocation.name}</h2>
 
                         <p id="info-description">
