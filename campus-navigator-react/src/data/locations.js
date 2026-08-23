@@ -265,7 +265,7 @@ export const locations = [
     },
     {
         id: "fleming-block",
-        name: "Chitkara College of Pharmacy",
+        name: "Chitkara College of Pharmacy/Fleming Block",
         category: "academic",
         type: "building",
         description: "Academic block containing classrooms, lecture halls, and faculty offices for Bachelor Of Pharmacy.",
@@ -725,6 +725,40 @@ export const locations = [
         ]
     },
     // Administrative
+
+    {
+        id: "chitkara-nurture-nest",
+        name: "Chitkara Nurture Nest",
+        category: "administration",
+        type: "building",
+
+        description: "A dedicated campus facility providing a comfortable and supportive space for parents and young children.",
+
+        schedule: {
+            weekdays: {
+                open: "09:00",
+                close: "17:30"
+            },
+            weekends: {
+                closed: true
+            }
+        },
+
+        access: [
+            "Students",
+            "Faculty",
+            "Staff",
+            "Visitors"
+        ],
+
+        facilities: [
+            "Child Care Area",
+            "Nursing Room",
+            "Seating Area",
+            "Rest Area",
+            "Washrooms"
+        ]
+    },
     {
         id: "babbage-block",
         name: "Babbage Block",
@@ -756,6 +790,40 @@ export const locations = [
             "Student Services",
             "Reception",
             "Waiting Area"
+        ]
+    },
+    {
+        id: "claude-bernard-lab",
+        name: "Claude Bernard Laboratory Animal Research Centre",
+        category: "academic",
+        type: "building",
+
+        description: "Laboratory animal research centre supporting academic, scientific, and research activities.",
+
+        schedule: {
+            weekdays: {
+                open: "08:00",
+                close: "17:30"
+            },
+            weekends: {
+                closed: true
+            }
+        },
+
+        access: [
+            "Students",
+            "Faculty",
+            "Staff",
+            "Researchers"
+        ],
+
+        facilities: [
+            "Research Laboratories",
+            "Laboratory Animal Facilities",
+            "Research Equipment",
+            "Faculty Offices",
+            "Wi-Fi",
+            "Washrooms"
         ]
     },
     {
@@ -844,7 +912,7 @@ export const locations = [
     createFoodOutlet("first-coffee", "First Coffee"),
     createFoodOutlet("subway", "Subway"),
     createFoodOutlet("doful", "Doful"),
-    createFoodOutlet("amul", "Amul"),
+    createFoodOutlet("amul", "Amul (under construction)"),
     createFoodOutlet("blue-tokai", "Blue Tokai"),
     createFoodOutlet("chai-vyanjan", "Chai Vyanjan"),
     createFoodOutlet("haveli", "The Haveli"),
@@ -863,7 +931,7 @@ export const locations = [
     // Sports Facilities
     createGround("sports-building", "Sportorium"),
     createGround("sports-area", "Sports Arena"),
-    
+
     // Grounds & Parks
     createGround("football-ground", "Football Ground"),
     createGround("beta-zone", "Beta Zone"),
@@ -920,11 +988,11 @@ function createParking(id, name) {
         schedule: {
             weekdays: {
                 open: "00:00",
-                close: "24:00"
+                close: "21:30"
             },
             weekends: {
                 open: "00:00",
-                close: "24:00"
+                close: "19:00"
             }
         },
 
@@ -947,12 +1015,12 @@ function createFoodOutlet(id, name) {
         schedule: {
             weekdays: {
                 open: "00:00",
-                close: "24:00"
+                close: "23:59"
             },
 
             weekends: {
                 open: "00:00",
-                close: "24:00"
+                close: "23:59"
             }
         },
 

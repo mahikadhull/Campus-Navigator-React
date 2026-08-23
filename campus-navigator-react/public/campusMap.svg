@@ -79,7 +79,7 @@
 <rect id="tesla-block" class="location" x="53.2927" y="306.682" width="21" height="65" fill="#DCEEFF"/>
 <rect id="maritime-school" class="location" x="27.2927" y="306.682" width="22" height="65" fill="#DCEEFF"/>
 <rect id="exploratorium" class="location" x="90.2927" y="328.682" width="81" height="20" fill="#DCEEFF"/>
-<rect id="mechanical-workshop" class="location" x="342.293" y="393.682" width="33" height="42" fill="#DCEEFF"/>
+<rect id="pythagoras-block" class="location" x="342.293" y="393.682" width="33" height="42" fill="#DCEEFF"/>
 <rect id="pythagoras-block" class="location" x="342.293" y="441.682" width="33" height="45" fill="#DCEEFF"/>
 <rect id="rockefeller-block" class="location" x="417.293" y="578.682" width="69" height="53" fill="#DCEEFF"/>
 <rect id="martin-luther" class="location" x="507.293" y="578.682" width="36" height="53" fill="#DCEEFF"/>
@@ -93,7 +93,7 @@
 <rect id="bloom-block" class="location" x="317.293" y="191.682" width="22" height="13" fill="#DCEEFF"/>
 
 
-<rect id="library" class="location" x="514.293" y="331.682" width="9" height="8" fill="#DCEEFF"/>
+<rect id="library" class="location" x="514.293" y="331.682" width="9" height="8" fill="#6b8eae"/>
 <path id="law" class="location" d="M616.293 331.682H652.293V367.682H616.293V331.682Z" fill="#DCEEFF"/>
 <rect id="de-morgan-block" class="location" x="502.293" y="247.682" width="21" height="29" fill="#D9D9D9"/>
 

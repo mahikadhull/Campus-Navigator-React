@@ -96,7 +96,7 @@
 
 .legend-close-btn:hover {
     background: var(--heading);
-    color: white;
+    color: var(--text-primary);
 
     border-color: var(--heading);
 
@@ -717,7 +717,7 @@
 
     background: var(--heading);
 
-    color: white;
+    color: var(--text-primary);
 
     font-size: 12px;
 
