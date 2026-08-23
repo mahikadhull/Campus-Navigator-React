@@ -67,19 +67,6 @@ function InfoPanel({ selectedLocation, isInfoOpen, setIsInfoOpen }) {
                                 ))}
                             </div>
                         </section>
-
-                        <section className="info-section">
-                            <h4>Facilities</h4>
-
-                            <div className="info-tags">
-                                {selectedLocation.facilities.map((facility) => (
-                                    <span key={facility}>
-                                        {facility}
-                                    </span>
-                                ))}
-                            </div>
-                        </section>
-
                     </>
                 )}
 

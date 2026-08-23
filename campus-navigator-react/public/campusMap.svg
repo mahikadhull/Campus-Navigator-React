@@ -57,7 +57,7 @@
 <rect id="omega-zone-side" class="location ground" x="521.293" y="399.682" width="89" height="90" fill="#CFF3D9"/>
 <rect id="omega-zone-bottom" class="location ground" x="566.293" y="522.682" width="126" height="19" fill="#CFF3D9"/>
 <rect id="chitkara-woods" class="location park" x="342.293" y="273.682" width="52" height="41" fill="#CFF3D9"/>
-<rect id="chitkara-university-a" class="location park" x="408.293" y="280.682" width="37" height="34" fill="#CFF3D9"/>
+<rect id="chitkara-woods" class="location park" x="408.293" y="280.682" width="37" height="34" fill="#CFF3D9"/>
 <rect id="chitkara-university-b" class="location park" x="451.293" y="280.682" width="35" height="34" fill="#CFF3D9"/>
 <rect id="park-of-scluptures" class="location park" x="303.293" y="104.682" width="37" height="16" fill="#CFF3D9"/>
 
@@ -95,7 +95,7 @@
 
 <rect id="library" class="location" x="514.293" y="331.682" width="9" height="8" fill="#DCEEFF"/>
 <path id="law" class="location" d="M616.293 331.682H652.293V367.682H616.293V331.682Z" fill="#DCEEFF"/>
-<rect id="deMorgan-block" class="location" x="502.293" y="247.682" width="21" height="29" fill="#D9D9D9"/>
+<rect id="de-morgan-block" class="location" x="502.293" y="247.682" width="21" height="29" fill="#D9D9D9"/>
 
 <!-- Roads -->
 <line x1="332.293" y1="511.398" x2="332.322" y2="319.398" stroke="#B8B8B8" stroke-width="8"/>
@@ -178,7 +178,7 @@
 <path d="M260.293 112.682L265.293 109.682L278.793 153.182L328.293 242.682" stroke="#B8B8B8" stroke-width="8"/>
 
 
-<rect id="babbage-block" class="location" x="470.293" y="106.682" width="32" height="23" fill="#ECECEC"/>
+<rect id="babbage-block" class="location" x="470.293" y="106.682" width="32" height="23" fill="#f1bcbc"/>
 <rect id="admission-block" class="location" x="339.671" y="82.9315" width="38.6647" height="12.9337" transform="rotate(-35.1308 339.671 82.9315)" fill="#ECECEC"/>
 <path id="maingate-entry-block" class="location" d="M421.504 90.9577L376.833 37.7434L426.545 21.6622L421.504 90.9577Z" fill="#ECECEC"/>
 

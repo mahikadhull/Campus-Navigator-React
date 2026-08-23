@@ -588,7 +588,7 @@ export const locations = [
         ]
     },
     {
-        id: "demorgan-block",
+        id: "de-morgan-block",
         name: "DeMorgan Block",
         category: "academic",
         type: "building",
@@ -860,6 +860,10 @@ export const locations = [
     createParking("parking-chaivyanjan-left", "Car Parking"),
     createParking("parking-chaivyanjan-car", "Car Parking"),
 
+    // Sports Facilities
+    createGround("sports-building", "Sportorium"),
+    createGround("sports-area", "Sports Arena"),
+    
     // Grounds & Parks
     createGround("football-ground", "Football Ground"),
     createGround("beta-zone", "Beta Zone"),
@@ -980,12 +984,12 @@ function createGround(id, name) {
         schedule: {
             weekdays: {
                 open: "00:00",
-                close: "24:00"
+                close: "23:59"
             },
 
             weekends: {
                 open: "00:00",
-                close: "24:00"
+                close: "23:59"
             }
         },
 
