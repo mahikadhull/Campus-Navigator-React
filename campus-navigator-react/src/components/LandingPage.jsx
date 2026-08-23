@@ -1,15 +1,16 @@
 import { useState } from "react";
+import './landingpage.css';
 function LandingPage({ onExplore }) {
     const [videoStarted, setVideoStarted] = useState(false);
     const [videoEnded, setVideoEnded] = useState(false);
 
-    
+
     const [leaving, setLeaving] = useState(false);
     function handleExplore() {
         setLeaving(true);
         setTimeout(() => {
             onExplore();
-        }, 800)
+        }, 700)
     }
     return (
         <div className={`landing-page ${leaving ? "leaving" : ""}`}>
@@ -21,9 +22,7 @@ function LandingPage({ onExplore }) {
                 onPlay={() => setVideoStarted(true)}
                 onEnded={() => setVideoEnded(true)}
             ><source src="/campus-intro.mp4" type="video/mp4" /></video>
-            <div
-                className={`video-vignette ${videoEnded ? "visible" : ""}`}
-            />
+          
             <div className={`welcome-text ${videoStarted ? "show" : ""
                 } ${videoEnded ? "hide" : ""}`}>
                 <h1>
@@ -44,7 +43,7 @@ function LandingPage({ onExplore }) {
                 </p>
                 <br />
                 <button id="landing-explore-btn" onClick={handleExplore}>Explore Campus 
-                    <i className="fa-solid fa-arrow-right"></i>
+            
                 </button>
             </div>
         </div>

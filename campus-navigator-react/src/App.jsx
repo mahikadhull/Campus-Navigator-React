@@ -6,23 +6,12 @@ import "./App.css";
 
 function App() {
   const [showLanding,setShowLanding] = useState(true);
-  const [page, setPage] = useState("landing");
-  function goHome() {
-    setPage("landing");
-  }
+
     return (
     <>
-      {
-        showLanding ? (
-          <LandingPage
-          onExplore={()=>setShowLanding(false)}
-          />
-        ) : (
-          <CampusNavigator
-          
-          />
-        )
-      }
+      {showLanding 
+          ? (<LandingPage onExplore={()=>setShowLanding(false)}/>) 
+          : (<CampusNavigator/>)}
     </>
   );
 }
