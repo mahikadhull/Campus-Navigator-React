@@ -22,6 +22,11 @@ function CampusLegend({
         return null;
     }
 
+<<<<<<< HEAD
+=======
+    /*LEGEND DATA*/
+
+>>>>>>> 2cd992558c045dc025eabd2d1690209c0435a2d3
     const legendItems = [
         {
             icon: "🎓",
@@ -97,9 +102,7 @@ function CampusLegend({
     ];
 
 
-    /* =========================
-       QUIZ DATA
-    ========================= */
+    /*QUIZ DATA*/
 
     const quizQuestions = [
         {
@@ -174,18 +177,14 @@ function CampusLegend({
     ];
 
 
-    /* =========================
-       LEGEND CARD CLICK
-    ========================= */
+    /*LEGEND CARD CLICK*/
 
     function handleLegendClick(item) {
         setSelectedLegend(item);
     }
 
 
-    /* =========================
-       QUIZ
-    ========================= */
+    /*QUIZ*/
 
     function openQuiz() {
         setShowQuiz(true);
@@ -313,9 +312,7 @@ function CampusLegend({
                 }
             >
 
-                {/* =========================
-                    CLOSE BUTTON
-                ========================= */}
+                {/*CLOSE BUTTON*/}
 
                 <button
                     type="button"
@@ -327,9 +324,7 @@ function CampusLegend({
                 </button>
 
 
-                {/* =========================
-                    HEADER
-                ========================= */}
+                {/*HEAD*/}
 
                 <div className="legend-header">
 

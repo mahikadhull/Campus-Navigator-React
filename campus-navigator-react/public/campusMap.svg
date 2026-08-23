@@ -14,12 +14,12 @@
 <rect id="sports-area" class="location" x="185.616" y="273.564" width="139" height="39" transform="rotate(0.923913 185.616 273.564)" fill="#DDF5E5"/>
 <!-- Hostels -->
 <rect id="armstrong-hostel" class="location hostel"  x="591.293" y="650.682" width="57" height="17" fill="#EFE3FF"/>
-<rect id="magllen-hostel" class="location hostel" x="587.293" y="681.682" width="61" height="19" fill="#EFE3FF"/>
+<rect id="magallen-hostel" class="location hostel" x="587.293" y="681.682" width="61" height="19" fill="#EFE3FF"/>
 <rect id="marco-polo-hostel" class="location hostel" x="561.293" y="595.682" width="17" height="72" fill="#EFE3FF"/>
-<rect id="aristotle-hostel" class="location hostel" x="664.293" y="721.682" width="115" height="26" fill="#EFE3FF"/>
+<rect id="archemedes-hostel" class="location hostel" x="664.293" y="721.682" width="115" height="26" fill="#EFE3FF"/>
 <rect id="franklin-hostel" class="location hostel" x="664.293" y="771.682" width="115" height="28" fill="#EFE3FF"/>
 <rect id="alfred-nobel-hostel" class="location hostel" x="663.293" y="820.682" width="115" height="26" fill="#EFE3FF"/>
-<rect id="archemedes-hostel" class="location hostel" x="664.293" y="681.682" width="65" height="22" fill="#EFE3FF"/>
+<rect id="aristotle-hostel" class="location hostel" x="664.293" y="681.682" width="65" height="22" fill="#EFE3FF"/>
 
 <rect id="pi-hostel" class="location hostel" x="722.293" y="396.682" width="31" height="146" fill="#EFE3FF"/>
 <rect id="IBN-hostel" class="location hostel" x="760.293" y="372.682" width="26" height="151" fill="#EFE3FF"/>

@@ -6,10 +6,7 @@ import InfoPanel from "./InfoPanel";
 import Modal from "./Modal";
 import CampusLegend from "./CampusLegend";
 
-import {
-    TransformWrapper,
-    TransformComponent
-} from "react-zoom-pan-pinch";
+import {TransformWrapper,TransformComponent} from "react-zoom-pan-pinch";
 
 
 function CampusNavigator() {
@@ -30,13 +27,11 @@ function CampusNavigator() {
 
 
     useEffect(() => {
-
-        document.documentElement.setAttribute(
-            "data-theme",
-            darkMode ? "dark" : "light"
-        );
-
-    }, [darkMode]);
+            document.documentElement.setAttribute("data-theme",
+            darkMode 
+            ? "dark" 
+            : "light");
+        }, [darkMode]);
 
 
     return (
