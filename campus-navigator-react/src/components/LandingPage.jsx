@@ -3,6 +3,7 @@ function LandingPage({ onExplore }) {
     const [videoStarted, setVideoStarted] = useState(false);
     const [videoEnded, setVideoEnded] = useState(false);
 
+    
     const [leaving, setLeaving] = useState(false);
     function handleExplore() {
         setLeaving(true);
