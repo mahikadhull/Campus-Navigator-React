@@ -13,7 +13,7 @@ export function getCurrentStatus(location) {
 
     const openMinutes = openHour * 60 + openMinute;
     const closeMinutes = closeHour * 60 + closeMinute;
-    if (currentMins >= openMinutes && currentMins <= closeMinutes) {
+    if (currentMins >= openMinutes && currentMins < closeMinutes) {
         return `Open until ${formatTime(schedule.close)}`;
     }
     return `Closed (Opens at ${formatTime(schedule.open)})`;

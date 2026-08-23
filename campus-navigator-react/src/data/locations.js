@@ -5,7 +5,7 @@ export const locations = [
         name: "Central Library",
         category: "academic",
         type: "building",
-        description: "The main and only library of the campus.",
+        description: "The main library of the campus.",
         schedule: {
             weekdays: {
                 open: "00:00",
@@ -35,7 +35,7 @@ export const locations = [
         name: "Explore Hub",
         category: "academic",
         type: "building",
-        description: "The main and only library of the campus.",
+        description: "",
         schedule: {
             weekdays: {
                 open: "09:00",
@@ -43,7 +43,7 @@ export const locations = [
             },
             weekends: {
                 open: "09:00",
-                close: "21:30"
+                close: "12:00"
             }
         },
         access: [
@@ -65,7 +65,7 @@ export const locations = [
         name: "Moon Hall",
         category: "academic",
         type: "building",
-        description: "The main and only library of the campus.",
+        description: "",
         schedule: {
             weekdays: {
                 open: "08:00",
@@ -364,8 +364,8 @@ export const locations = [
                 close: "17:30"
             },
             weekends: {
-                open: "06:00",
-                close: "21:30"
+                open: "07:00",
+                close: "17:30"
             }
         },
         access: [
@@ -420,7 +420,7 @@ export const locations = [
         schedule: {
             weekdays: {
                 open: "08:00",
-                close: "17:00"
+                close: "21:30"
             },
             weekends: {
                 closed: true
@@ -763,7 +763,7 @@ export const locations = [
         name: "Health Care",
         category: "health",
         type: "building",
-        description: "The main and only library of the campus.",
+        description: "The  of the campus.",
         schedule: {
             weekdays: {
                 open: "00:00",
@@ -780,11 +780,9 @@ export const locations = [
             "Staff"
         ],
         facilities: [
-            "Reading Area",
-            "Computer Lab",
-            "Wi-Fi",
+            "Emergency",
+            "OPD",
             "Sitting Area",
-            "Property Area"
         ]
 
     },
@@ -834,7 +832,7 @@ export const locations = [
     createHostel("alfred-nobel-hostel", "Alfred Nobel Hostel", "Boys"),
     createHostel("franklin-hostel", "Franklin Hostel", "Boys"),
     createHostel("magallen-hostel", "Magallen Hostel", "Boys"),
-    createHostel("marco-polo-hostel", "Marco Polo Hostel", "Boys"),
+    createHostel("marco-polo-hostel", "Marco Polo Hostel", "Boys and Girls"),
 
     // Food areas
     createFoodOutlet("square-2", "Square-2"),
