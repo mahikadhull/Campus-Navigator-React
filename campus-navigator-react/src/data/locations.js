@@ -72,7 +72,7 @@ export const locations = [
                 close: "17:00"
             },
             weekends: {
-                closed:true
+                closed: true
             }
         },
         access: [
@@ -852,21 +852,25 @@ export const locations = [
 
     // Parkings
 
-    createParking("parking-chaivyanjan","Car Parking"),
-    createParking("parking-maingate","Car Parking"),
-    createParking("parking-turing","Two-Wheeler Parking"),
-    createParking("parking-omega","Parking"),
-    createParking("parking-bus","Bus Parking"),
-    createParking("parking-chaivyanjan-left","Car Parking"),
-    createParking("parking-chaivyanjan-car","Car Parking"),
+    createParking("parking-chaivyanjan", "Car Parking"),
+    createParking("parking-maingate", "Car Parking"),
+    createParking("parking-turing", "Two-Wheeler Parking"),
+    createParking("parking-omega", "Parking"),
+    createParking("parking-bus", "Bus Parking"),
+    createParking("parking-chaivyanjan-left", "Car Parking"),
+    createParking("parking-chaivyanjan-car", "Car Parking"),
 
-    // Parks
-    createGround("beta-zone","Beta Zone"),
-    createGround("chsf-park","CHSF Park"),
-    createGround("chitkara-woods","Chitkara Woods"),
-    createGround("chitkara-university-a","Chitkara University"),
-    createGround("chitkara-university-b","Chitkara University"),
-    createGround("park-of-scluptures","Park of Scluptures")
+    // Grounds & Parks
+    createGround("football-ground", "Football Ground"),
+    createGround("beta-zone", "Beta Zone"),
+    createGround("chsf-park", "CHSF Park"),
+    createGround("chitkara-woods", "Chitkara Woods"),
+    createGround("chitkara-university-a", "Chitkara University"),
+    createGround("chitkara-university-b", "Chitkara University"),
+    createGround("park-of-scluptures", "Park of Sculptures"),
+    createGround("alpha-zone", "Alpha Zone"),
+    createGround("omega-zone-side", "Omega Zone"),
+    createGround("omega-zone-bottom", "Omega Zone")
 ];
 
 function createHostel(id, name, gender) {
@@ -935,44 +939,72 @@ function createFoodOutlet(id, name) {
         name,
         category: "food",
         type: "restaurant",
+
         schedule: {
             weekdays: {
                 open: "00:00",
                 close: "24:00"
             },
+
             weekends: {
                 open: "00:00",
                 close: "24:00"
             }
         },
 
-        description: "Food outlet serving meals and refreshments.",
+        description:
+            "Food outlet serving meals and refreshments.",
 
-        access: ["Students", "Faculty", "Staff", "Visitors"]
+        access: [
+            "Students",
+            "Faculty",
+            "Staff",
+            "Visitors"
+        ],
+
+        facilities: [
+            "Seating Area",
+            "Food & Beverages"
+        ]
     };
 }
 
-function createGround(id,name) {
+function createGround(id, name) {
     return {
         id,
         name,
+
         category: "ground",
         type: "ground",
+
         schedule: {
             weekdays: {
                 open: "00:00",
                 close: "24:00"
             },
+
             weekends: {
                 open: "00:00",
                 close: "24:00"
             }
         },
 
-        description: "Food outlet serving meals and refreshments.",
+        description:
+            "Outdoor campus ground and recreational area.",
 
-        access: ["Students", "Faculty", "Staff", "Visitors"]
-    }
+        access: [
+            "Students",
+            "Faculty",
+            "Staff",
+            "Visitors"
+        ],
+
+        facilities: [
+            "Open Recreation Area",
+            "Walking Space",
+            "Outdoor Activities"
+        ]
+    };
 }
 
 

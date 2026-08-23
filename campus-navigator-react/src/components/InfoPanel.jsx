@@ -57,12 +57,12 @@ function InfoPanel({ selectedLocation, isInfoOpen, setIsInfoOpen }) {
                             {status}
                         </p>
                         <section className="info-section">
-                            <h4>Access</h4>
+                            <h4>Facilities</h4>
 
                             <div className="info-tags">
-                                {selectedLocation.access.map((person) => (
-                                    <span key={person}>
-                                        {person}
+                                {(selectedLocation.facilities || []).map((facility) => (
+                                    <span key={facility}>
+                                        {facility}
                                     </span>
                                 ))}
                             </div>
