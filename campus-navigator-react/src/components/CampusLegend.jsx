@@ -22,10 +22,6 @@ function CampusLegend({
         return null;
     }
 
-    /* =========================
-       LEGEND DATA
-    ========================= */
-
     const legendItems = [
         {
             icon: "🎓",

@@ -14,9 +14,7 @@ function Header({
             <nav>
                 <div id="nav-title">
                     <button id="logo">Explore <span>U.</span></button>
-                    {/* <p>
-                        Explore • Navigate • Connect
-                    </p> */}
+                    
                 </div>
                 <SearchBar
                     search={search}
