@@ -35,7 +35,21 @@ function InfoPanel({ selectedLocation, isInfoOpen, setIsInfoOpen }) {
                         </p>
                     </>
                 ) : (
-                    <>
+                    <>{
+                        selectedLocation.image ? (
+                            <img
+                                id="location-image"
+                                src={selectedLocation.image}
+                                alt={selectedLocation.name}
+                            />
+                        ) : (
+                            <div className="no-image">
+                                <i className="fa-regular fa-image"></i>
+                                <span>No image available</span>
+                            </div>
+                        )
+                    }
+
                         <h2>{selectedLocation.name}</h2>
 
                         <p id="info-description">
@@ -57,29 +71,16 @@ function InfoPanel({ selectedLocation, isInfoOpen, setIsInfoOpen }) {
                             {status}
                         </p>
                         <section className="info-section">
-                            <h4>Access</h4>
-
-                            <div className="info-tags">
-                                {selectedLocation.access.map((person) => (
-                                    <span key={person}>
-                                        {person}
-                                    </span>
-                                ))}
-                            </div>
-                        </section>
-
-                        <section className="info-section">
                             <h4>Facilities</h4>
 
                             <div className="info-tags">
-                                {selectedLocation.facilities.map((facility) => (
+                                {(selectedLocation.facilities || []).map((facility) => (
                                     <span key={facility}>
                                         {facility}
                                     </span>
                                 ))}
                             </div>
                         </section>
-
                     </>
                 )}
 

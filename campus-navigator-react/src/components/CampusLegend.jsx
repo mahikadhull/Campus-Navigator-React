@@ -22,6 +22,7 @@ function CampusLegend({
         return null;
     }
 
+
     const legendItems = [
         {
             icon: "🎓",
@@ -97,7 +98,7 @@ function CampusLegend({
     ];
 
 
-    /*QUIZ DATA*/
+    
 
     const quizQuestions = [
         {
@@ -172,14 +173,14 @@ function CampusLegend({
     ];
 
 
-    /*LEGEND CARD CLICK*/
+   
 
     function handleLegendClick(item) {
         setSelectedLegend(item);
     }
 
 
-    /*QUIZ*/
+   
 
     function openQuiz() {
         setShowQuiz(true);
@@ -226,10 +227,6 @@ function CampusLegend({
     }
 
 
-    /* =========================
-       SURPRISE BOX
-    ========================= */
-
     function openSurprise() {
         setShowSurprise(true);
         setShowQuiz(false);
@@ -247,7 +244,7 @@ function CampusLegend({
             const randomIndex =
                 Math.floor(
                     Math.random() *
-                        locations.length
+                    locations.length
                 );
 
             newLocation =
@@ -257,7 +254,7 @@ function CampusLegend({
             locations.length > 1 &&
             randomLocation &&
             newLocation.id ===
-                randomLocation.id
+            randomLocation.id
         );
 
         setRandomLocation(newLocation);
@@ -281,9 +278,6 @@ function CampusLegend({
     }
 
 
-    /* =========================
-       RESET
-    ========================= */
 
     function closeLegend() {
         setSelectedLegend(null);
@@ -307,7 +301,6 @@ function CampusLegend({
                 }
             >
 
-                {/*CLOSE BUTTON*/}
 
                 <button
                     type="button"
@@ -341,9 +334,7 @@ function CampusLegend({
                 </div>
 
 
-                {/* =========================
-                    CATEGORY INFORMATION
-                ========================= */}
+
 
                 {selectedLegend ? (
 
@@ -380,9 +371,7 @@ function CampusLegend({
                 ) : (
 
                     <>
-                        {/* =========================
-                            LEGEND CARDS
-                        ========================= */}
+
 
                         <div className="legend-grid">
 
@@ -432,23 +421,17 @@ function CampusLegend({
                         </div>
 
 
-                        {/* =========================
-                            DIVIDER
-                        ========================= */}
+
 
                         <div className="legend-divider"></div>
 
 
-                        {/* =========================
-                            INTERACTIVE FEATURES
-                        ========================= */}
+
 
                         <div className="legend-features">
 
 
-                            {/* =====================
-                                CAMPUS QUIZ
-                            ===================== */}
+
 
                             <div className="feature-box quiz-box">
 
@@ -513,15 +496,15 @@ function CampusLegend({
 
                                                     let
                                                         optionClass =
-                                                        "quiz-option";
+                                                            "quiz-option";
 
                                                     if (
                                                         selectedAnswer !==
                                                         null &&
                                                         option ===
-                                                            quizQuestions[
-                                                                quizIndex
-                                                            ].answer
+                                                        quizQuestions[
+                                                            quizIndex
+                                                        ].answer
                                                     ) {
                                                         optionClass +=
                                                             " correct";
@@ -529,11 +512,11 @@ function CampusLegend({
 
                                                     if (
                                                         selectedAnswer ===
-                                                            option &&
+                                                        option &&
                                                         option !==
-                                                            quizQuestions[
-                                                                quizIndex
-                                                            ].answer
+                                                        quizQuestions[
+                                                            quizIndex
+                                                        ].answer
                                                     ) {
                                                         optionClass +=
                                                             " wrong";
@@ -574,47 +557,47 @@ function CampusLegend({
                                         {selectedAnswer !==
                                             null && (
 
-                                            <>
+                                                <>
 
-                                                <div
-                                                    className={
-                                                        selectedAnswer ===
-                                                        quizQuestions[
-                                                            quizIndex
-                                                        ].answer
-                                                            ? "quiz-feedback correct"
-                                                            : "quiz-feedback wrong"
-                                                    }
-                                                >
+                                                    <div
+                                                        className={
+                                                            selectedAnswer ===
+                                                                quizQuestions[
+                                                                    quizIndex
+                                                                ].answer
+                                                                ? "quiz-feedback correct"
+                                                                : "quiz-feedback wrong"
+                                                        }
+                                                    >
 
-                                                    {selectedAnswer ===
-                                                    quizQuestions[
-                                                        quizIndex
-                                                    ].answer
-                                                        ? "🎉 Correct!"
-                                                        : `❌ Correct answer: ${quizQuestions[quizIndex].answer}`
-                                                    }
+                                                        {selectedAnswer ===
+                                                            quizQuestions[
+                                                                quizIndex
+                                                            ].answer
+                                                            ? "🎉 Correct!"
+                                                            : `❌ Correct answer: ${quizQuestions[quizIndex].answer}`
+                                                        }
 
-                                                </div>
+                                                    </div>
 
 
-                                                <button
-                                                    type="button"
-                                                    className="feature-btn"
-                                                    onClick={
-                                                        nextQuestion
-                                                    }
-                                                >
-                                                    {quizIndex <
-                                                    quizQuestions.length -
-                                                        1
-                                                        ? "Next Question →"
-                                                        : "Play Again 🔄"}
-                                                </button>
+                                                    <button
+                                                        type="button"
+                                                        className="feature-btn"
+                                                        onClick={
+                                                            nextQuestion
+                                                        }
+                                                    >
+                                                        {quizIndex <
+                                                            quizQuestions.length -
+                                                            1
+                                                            ? "Next Question →"
+                                                            : "Play Again 🔄"}
+                                                    </button>
 
-                                            </>
+                                                </>
 
-                                        )}
+                                            )}
 
 
                                         <div className="quiz-score">
@@ -632,9 +615,7 @@ function CampusLegend({
                             </div>
 
 
-                            {/* =====================
-                                SURPRISE BOX
-                            ===================== */}
+
 
                             <div className="feature-box surprise-box">
 
