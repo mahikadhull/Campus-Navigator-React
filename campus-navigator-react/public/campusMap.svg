@@ -1,16 +1,16 @@
 <svg width="859" height="857" viewBox="0 0 859 857" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 <rect opacity="0.3" x="3.29266" y="14.6821" width="855" height="842" fill="url(#pattern0_8_39)"/>
-<rect id="explore-hub" class="location" x="383.293" y="399.682" width="21" height="39" fill="#FFE082"/>
+<rect id="explore-hub" class="location miscellaneous" x="383.293" y="399.682" width="21" height="39" fill="#FFE082"/>
 <!-- <rect id="x="502.293" y="276.682" width="21" height="17" fill="#FFE082"/> -->
-<rect id="tuck-shop" class="location"x="384.293" y="467.682" width="15" height="16" fill="#FFE082"/>
-<rect id="apple-experience" class="location" x="465.293" y="483.682" width="16" height="20" fill="#FFE082"/>
-<rect id="salon" class="location" x="478.293" y="440.682" width="5" height="9" fill="#FFE082"/>
-<rect id="ATM" class="location" x="478.293" y="430.682" width="5" height="9" fill="#FFE082"/>
-<rect id="sports-building" class="location" x="197.293" y="332.682" width="118" height="26" fill="#DDF5E5"/>
+<rect id="tuck-shop" class="location miscellaneous"x="384.293" y="467.682" width="15" height="16" fill="#FFE082"/>
+<rect id="apple-experience" class="location miscellaneous" x="465.293" y="483.682" width="16" height="20" fill="#FFE082"/>
+<rect id="salon" class="location miscellaneous" x="478.293" y="440.682" width="5" height="9" fill="#FFE082"/>
+<rect id="ATM" class="location miscellaneous" x="478.293" y="430.682" width="5" height="9" fill="#FFE082"/>
+<rect id="sports-building" class="location miscellaneous" x="197.293" y="332.682" width="118" height="26" fill="#ffe082"/>
 
-<rect id="ramanujan-block" class="location" x="219.293" y="352.682" width="66" height="28" fill="#DCEEFF"/>
-<rect id="sports-area" class="location" x="185.616" y="273.564" width="139" height="39" transform="rotate(0.923913 185.616 273.564)" fill="#DDF5E5"/>
+<rect id="ramanujan-block" class="location academic" x="219.293" y="352.682" width="66" height="28" fill="#DCEEFF"/>
+<rect id="sports-area" class="location ground" x="185.616" y="273.564" width="139" height="39" transform="rotate(0.923913 185.616 273.564)" fill="#cff3d9"/>
 <!-- Hostels -->
 <rect id="armstrong-hostel" class="location hostel"  x="591.293" y="650.682" width="57" height="17" fill="#EFE3FF"/>
 <rect id="magallen-hostel" class="location hostel" x="587.293" y="681.682" width="61" height="19" fill="#EFE3FF"/>
@@ -24,10 +24,10 @@
 <rect id="IBN-hostel" class="location hostel" x="760.293" y="372.682" width="26" height="151" fill="#EFE3FF"/>
 <rect id="NGH-hostel" class="location hostel" x="791.293" y="372.682" width="25" height="151" fill="#EFE3FF"/>
 <rect id="vasco-hostel" class="location hostel" x="664.293" y="558.682" width="89" height="30" fill="#EFE3FF"/>
-<!-- <g id="columbus-hostel"> -->
-<rect id="columbus-hostel" class="location hostel" x="591.293" y="567.682" width="39" height="27" fill="#EFE3FF"/>
-<rect id="columbus-hostel" class="location hostel" x="629.293" y="588.682" width="18" height="44" fill="#EFE3FF"/>
-<!-- </g> -->
+<g id="columbus-hostel" class="location hostel">
+<rect  id="columbus-hostel" class="location hostel" x="591.293" y="567.682" width="39" height="27" fill="#EFE3FF"/>
+<rect  id="columbus-hostel" class="location hostel" x="629.293" y="588.682" width="18" height="44" fill="#EFE3FF"/>
+</g>
 
 <rect id="square-2" class="location food" x="548.293" y="125.682" width="35" height="42" fill="#FFE7D6"/>
 <rect id="grab-go" class="location food" x="406.293" y="399.682" width="14" height="9" fill="#FFE7D6"/>
@@ -45,24 +45,27 @@
 <rect id="chai-vyanjan" class="location food" x="282.293" y="117.682" width="10" height="12" fill="#FFE7D6"/>
 
 <rect id="football-ground" class="location ground" x="185.293" y="185.682" width="107" height="81" fill="#CFF3D9"/>
-<rect id="beta-zone" class="location park" x="408.293" y="331.682" width="78" height="54" fill="#CFF3D9"/>
-<path id="chsf-park" class="location park" d="M376.193 356.748L395.121 335.494L394.202 378.786L376.193 356.748Z" fill="#CFF3D9"/>
-<path id="martin-fountain" class="location park" d="M510.373 495.733L559.373 554.01L502.076 571.418L510.373 495.733Z" fill="#CFF3D9"/>
+<rect id="beta-zone" class="location park ground" x="408.293" y="331.682" width="78" height="54" fill="#CFF3D9"/>
+<path id="chsf-park" class="location park ground" d="M376.193 356.748L395.121 335.494L394.202 378.786L376.193 356.748Z" fill="#CFF3D9"/>
+<path id="martin-fountain" class="location park ground" d="M510.373 495.733L559.373 554.01L502.076 571.418L510.373 495.733Z" fill="#CFF3D9"/>
 <g id="alpha-zone" class="location ground">
-<rect x="354.293" y="108.682" width="42" height="109" fill="#CFF3D9"/>
-<path d="M355.846 217.142L399.48 89.7485L490.504 217.362L355.846 217.142Z" fill="#CFF3D9"/>
+<rect id="alpha-zone" class="location ground" x="354.293" y="108.682" width="42" height="109" fill="#CFF3D9"/>
+<path id = "alpha-zone" class="location ground" d="M355.846 217.142L399.48 89.7485L490.504 217.362L355.846 217.142Z" fill="#CFF3D9"/>
 </g>
-
-<rect id="omega-zone-side" class="location ground" x="521.293" y="399.682" width="89" height="90" fill="#CFF3D9"/>
-<rect id="omega-zone-bottom" class="location ground" x="566.293" y="522.682" width="126" height="19" fill="#CFF3D9"/>
-<rect id="chitkara-woods" class="location park" x="342.293" y="273.682" width="52" height="41" fill="#CFF3D9"/>
-<rect id="chitkara-woods" class="location park" x="408.293" y="280.682" width="37" height="34" fill="#CFF3D9"/>
-<rect id="chitkara-university-b" class="location park" x="451.293" y="280.682" width="35" height="34" fill="#CFF3D9"/>
-<rect id="park-of-scluptures" class="location park" x="303.293" y="104.682" width="37" height="16" fill="#CFF3D9"/>
+<g id="omega-zone" class="location ground">
+<rect  id="omega-zone" class="location ground" x="521.293" y="399.682" width="89" height="90" fill="#CFF3D9"/>
+<rect  id="omega-zone" class="location ground" x="566.293" y="522.682" width="126" height="19" fill="#CFF3D9"/>
+</g>
+<rect id="chitkara-woods" class="location park ground" x="342.293" y="273.682" width="52" height="41" fill="#CFF3D9"/>
+<g id="chitkara-university">
+<rect id="chitkara-university" class="location park ground" x="408.293" y="280.682" width="37" height="34" fill="#CFF3D9"/>
+<rect id="chitkara-university" class="location park ground" x="451.293" y="280.682" width="35" height="34" fill="#CFF3D9"/>
+</g>
+<rect id="park-of-scluptures" class="location park ground" x="303.293" y="104.682" width="37" height="16" fill="#CFF3D9"/>
 
 <path d="M74.3168 293.319L28.735 292.286L70.7389 247.866L74.3168 293.319Z" fill="#B7D7A8"/>
 
-<rect id="chitkara-nurture-nest" class="location" x="599.293" y="331.682" width="17" height="36" fill="#FFE3E3"/>
+<rect id="chitkara-nurture-nest" class="location miscellaneous" x="599.293" y="331.682" width="17" height="36" fill="#FFE3E3"/>
 <rect id="health-care" class="location health" x="502.293" y="293.682" width="21" height="19" fill="#FFE3E3"/>
 <rect id="lecorbussier-block" class="location" x="482.293" y="134.682" width="50" height="28" fill="#DCEEFF"/>
 <rect id="claude-bernard-lab" class="location" x="681.293" y="321.682" width="35" height="18" fill="#DCEEFF"/>
@@ -88,13 +91,13 @@
 
 <rect  id="picasso-block" class="location" x="303.293" y="125.682" width="36" height="31" fill="#DCEEFF"/>
 <rect id="art-gallery" class="location" x="317.293" y="158.682" width="22" height="13" fill="#DCEEFF"/>
-<rect id="happiess-center" class="location" x="317.293" y="174.682" width="22" height="13" fill="#DCEEFF"/>
+<rect id="happiness-center" class="location miscellaneous" x="317.293" y="174.682" width="22" height="13" fill="#DCEEFF"/>
 <rect id="bloom-block" class="location" x="317.293" y="191.682" width="22" height="13" fill="#DCEEFF"/>
 
 
-<rect id="library" class="location" x="514.293" y="331.682" width="9" height="8" fill="#6b8eae"/>
+<rect id="library" class="location" x="514.293" y="331.682" width="9" height="8" fill="#DCEEFF"/>
 <path id="law" class="location" d="M616.293 331.682H652.293V367.682H616.293V331.682Z" fill="#DCEEFF"/>
-<rect id="de-morgan-block" class="location" x="502.293" y="247.682" width="21" height="29" fill="#D9D9D9"/>
+<rect id="deMorgan-block" class="location" x="502.293" y="247.682" width="21" height="29" fill="#D9D9D9"/>
 
 <!-- Roads -->
 <line x1="332.293" y1="511.398" x2="332.322" y2="319.398" stroke="#B8B8B8" stroke-width="8"/>
@@ -177,27 +180,26 @@
 <path d="M260.293 112.682L265.293 109.682L278.793 153.182L328.293 242.682" stroke="#B8B8B8" stroke-width="8"/>
 
 
-<rect id="babbage-block" class="location" x="470.293" y="106.682" width="32" height="23" fill="#f1bcbc"/>
-<rect id="admission-block" class="location" x="339.671" y="82.9315" width="38.6647" height="12.9337" transform="rotate(-35.1308 339.671 82.9315)" fill="#ECECEC"/>
-<path id="maingate-entry-block" class="location" d="M421.504 90.9577L376.833 37.7434L426.545 21.6622L421.504 90.9577Z" fill="#ECECEC"/>
+<rect id="babbage-block" class="location administration" x="470.293" y="106.682" width="32" height="23" fill="#d9d9d9"/>
+<rect id="admission-block" class="location administration" x="339.671" y="82.9315" width="38.6647" height="12.9337" transform="rotate(-35.1308 339.671 82.9315)" fill="#ECECEC"/>
+<path id="maingate-entry-block" class="location administration" d="M421.504 90.9577L376.833 37.7434L426.545 21.6622L421.504 90.9577Z" fill="#ECECEC"/>
 
 <!-- Parkings -->
-<rect id="parking-chaivyanjan" class="location" x="266.293" y="85.326" width="84.71" height="25.4936" transform="rotate(-39.4213 266.293 85.326)" fill="#FFF5CC"/>
-<rect id="parking-maingate" class="location" x="431.446" y="19.752" width="156.904" height="66.7961" transform="rotate(0.0489253 431.446 19.752)" fill="#FFF5CC"/>
-<rect id="parking-turing" class="location" x="646.293" y="393.682" width="50" height="121" fill="#FFF5CC"/>
-<g id="parking-omega" class="location">
-<rect id="parking-omega1" class="location" x="503.324" y="179.682" width="83.9745" height="36.9283" transform="rotate(0.0489253 503.324 179.682)" fill="#FFF5CC"/>
-<rect id="parking-omega2" class="location"x="610.293" y="399.682" width="27" height="63" fill="#FFF5CC"/>
+<rect id="parking-chaivyanjan" class="location parking" x="266.293" y="85.326" width="84.71" height="25.4936" transform="rotate(-39.4213 266.293 85.326)" fill="#FFF5CC"/>
+<rect id="parking-maingate" class="location parking" x="431.446" y="19.752" width="156.904" height="66.7961" transform="rotate(0.0489253 431.446 19.752)" fill="#FFF5CC"/>
+<g id="parking-omega" class="location parking">
+<rect id="parking-omega" class="location parking" x="646.293" y="393.682" width="50" height="121" fill="#FFF5CC"/>
+<rect id="parking-omega"  class="location parking" x="610.293" y="399.682" width="27" height="63" fill="#FFF5CC"/>
 </g>
-<rect id="parking-bus" class="location" x="342.293" y="523.682" width="144" height="44" fill="#FFF5CC"/>
-<g id="parking-chaivyanjan-left">
-<rect id="parking-6" class="location" x="221.293" y="147.697" width="38.2328" height="42.2956" transform="rotate(-35.1566 221.293 147.697)" fill="#FFF5CC"/>
-<path id="parking-7" class="location" d="M221.793 146.682L246.474 182.682H197.111L221.793 146.682Z" fill="#FFF5CC"/>
+<rect id="parking-turing" class="location parking" x="503.324" y="179.682" width="83.9745" height="36.9283" transform="rotate(0.0489253 503.324 179.682)" fill="#FFF5CC"/>
+<rect id="parking-bus" class="location parking"   x="342.293" y="523.682" width="144" height="44" fill="#FFF5CC"/>
+<g id="parking-chaivyanjan-left" class="location parking">
+<rect id="parking-chaivyanjan-left" class="location parking" x="221.293" y="147.697" width="38.2328" height="42.2956" transform="rotate(-35.1566 221.293 147.697)" fill="#FFF5CC"/>
+<path id="parking-chaivyanjan-left" class="location parking" d="M221.793 146.682L246.474 182.682H197.111L221.793 146.682Z" fill="#FFF5CC"/>
 </g>
-
+<rect id="parking-tesla" class="location parking" x="90.2927" y="236.682" width="77" height="71" fill="#FFF5CC"/>
 
 <!-- Background -->
-<rect x="90.2927" y="236.682" width="77" height="71" fill="#FFF5CC"/>
 <rect x="665.293" y="594.682" width="179" height="69" fill="#B7D7A8"/>
 <rect x="756.293" y="575.682" width="88" height="23" fill="#B7D7A8"/>
 <rect x="756.293" y="575.682" width="88" height="23" fill="#B7D7A8"/>

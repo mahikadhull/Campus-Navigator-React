@@ -10,7 +10,7 @@ function LandingPage({ onExplore }) {
         setLeaving(true);
         setTimeout(() => {
             onExplore();
-        }, 700)
+        }, 800)
     }
     return (
         <div className={`landing-page ${leaving ? "leaving" : ""}`}>

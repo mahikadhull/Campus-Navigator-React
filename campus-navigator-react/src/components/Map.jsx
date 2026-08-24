@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { locations } from "../data/locations";
 
-function Map({ selectedLocation, setSelectedLocation, selectedCategory,setIsInfoOpen }) {
+function Map({ selectedLocation, setSelectedLocation, selectedCategory, setIsInfoOpen }) {
     const mapRef = useRef(null);
     function handleMapClick(event) {
         const building = event.target.closest(".location");
@@ -22,7 +22,7 @@ function Map({ selectedLocation, setSelectedLocation, selectedCategory,setIsInfo
             const svgElement = mapRef.current.querySelector("svg");
             svgElement.addEventListener("click", handleMapClick);
         }
-        loadMap();      
+        loadMap();
 
         return () => {
             const svgElement = mapRef.current?.querySelector("svg");
@@ -45,7 +45,8 @@ function Map({ selectedLocation, setSelectedLocation, selectedCategory,setIsInfo
         });
 
         if (!selectedLocation) {
-            return;}
+            return;
+        }
 
         const selectedBuilding =
             mapRef.current.querySelector(
@@ -56,10 +57,10 @@ function Map({ selectedLocation, setSelectedLocation, selectedCategory,setIsInfo
 
         selectedBuilding.classList.add("selected-building");
         selectedBuilding.style.setProperty(
-            "--selected-fill",`var(--${selectedLocation.category})`
+            "--selected-fill", `var(--${selectedLocation.category})`
         );
         selectedBuilding.style.setProperty(
-            "--selected-stroke",`var(--${selectedLocation.category}_stroke)`
+            "--selected-stroke", `var(--${selectedLocation.category}_stroke)`
         );
 
     }, [selectedLocation]);
@@ -78,13 +79,23 @@ function Map({ selectedLocation, setSelectedLocation, selectedCategory,setIsInfo
 
             if (!location) return;
 
+            building.classList.remove("highlight");
+            building.style.removeProperty("--highlight-fill");
+            building.style.removeProperty("--highlight-stroke");
+
             if (
                 selectedCategory === "all" ||
                 location.category === selectedCategory
             ) {
                 building.classList.add("highlight");
-            } else {
-                building.classList.remove("highlight");
+                building.style.setProperty(
+                    "--highlight-fill",
+                    `var(--${location.category})`
+                );
+                building.style.setProperty(
+                    "--highlight-stroke",
+                    `var(--${location.category}_stroke)`
+                );
             }
 
         });

@@ -35,7 +35,7 @@ export const locations = [
     {
         id: "explore-hub",
         name: "Explore Hub",
-        category: "academic",
+        category: "miscellaneous",
         type: "building",
         image: "/images/explore-hub.jpg",
 
@@ -618,7 +618,7 @@ export const locations = [
         ]
     },
     {
-        id: "de-morgan-block",
+        id: "deMorgan-block",
         name: "DeMorgan Block",
         category: "academic",
         type: "building",
@@ -839,7 +839,7 @@ export const locations = [
     {
         id: "apple-experience",
         name: "Apple Experience Centre",
-        category: "academic",
+        category: "miscellaneous",
         type: "building",
 
         description: "An interactive centre where students and visitors can explore and experience Apple products, devices, and technologies.",
@@ -876,7 +876,7 @@ export const locations = [
     {
         id: "chitkara-nurture-nest",
         name: "Chitkara Nurture Nest",
-        category: "administration",
+        category: "miscellaneous",
         type: "building",
         image: "/images/nurture-nest.jpg",
 
@@ -1011,7 +1011,6 @@ export const locations = [
         name: "Admission Block",
         category: "administration",
         type: "building",
-        image: "/images/admission.jpg",
 
         description: "Administrative building assisting prospective students with admissions, counselling, and enrollment procedures.",
 
@@ -1038,6 +1037,173 @@ export const locations = [
             "Counselling Offices",
             "Reception",
             "Waiting Area"
+        ]
+    },
+    // Miscellaneous..
+
+    {
+        id: "happiness-center",
+        name: "Chitkara Happiness Center",
+        category: "miscellaneous",
+        type: "building",
+
+        description: "Chitkara happiness center.",
+
+        schedule: {
+            weekdays: {
+                open: "09:00",
+                close: "17:00"
+            },
+            weekends: {
+                closed: true
+            }
+        },
+
+        access: [
+            "Prospective Students",
+            "Students",
+            "Parents",
+            "Visitors",
+            "Staff"
+        ],
+
+        facilities: [
+            "Admission Counters",
+            "Counselling Offices",
+            "Reception",
+            "Waiting Area"
+        ]
+    },
+    {
+        id: "ATM",
+        name: "ATM",
+        category: "miscellaneous",
+        type: "building",
+
+        description: "HDFC Bank ATM",
+
+        schedule: {
+            weekdays: {
+                open: "09:00",
+                close: "17:00"
+            },
+            weekends: {
+                closed: true
+            }
+        },
+
+        access: [
+            "Prospective Students",
+            "Students",
+            "Parents",
+            "Visitors",
+            "Staff"
+        ],
+
+        facilities: [
+            "Cash Withdrawal and deposit"
+        ]
+    },
+    {
+        id: "salon",
+        name: "Beauty Lounge",
+        category: "miscellaneous",
+        type: "building",
+
+        description: "A convenient grooming facility providing personal care and styling services for students and staff.",
+
+        schedule: {
+            weekdays: {
+                open: "09:00",
+                close: "17:00"
+            },
+            weekends: {
+                closed: true
+            }
+        },
+
+        access: [
+            "Prospective Students",
+            "Students",
+            "Visitors",
+            "Staff"
+        ],
+
+        facilities: [
+            "Haircut",
+            "Hair Styling",
+            "Hair Wash",
+            "Beard Grooming",
+            "Facial",
+            "Manicure",
+        ]
+    },
+    {
+        id: "sports-building",
+        name: "Sportorium",
+        category: "miscellaneous",
+        type: "building",
+
+        description: "A multi-purpose sports facility offering indoor and outdoor recreational activities, fitness facilities and spaces for students to participate in sports and leisure activities.",
+
+        schedule: {
+            weekdays: {
+                open: "09:00",
+                close: "17:00"
+            },
+            weekends: {
+                closed: true
+            }
+        },
+
+        access: [
+            "Prospective Students",
+            "Students",
+            "Parents",
+            "Visitors",
+            "Staff"
+        ],
+
+        facilities: [
+            "Swimming Pool",
+            "Pool Table",
+            "Tennis Court",
+            "Badminton Court",
+            "Indoor Games",
+            "Fitness Area",
+            "Changing Rooms",
+            "Seating Area"
+        ]
+    },
+    {
+        id: "tuck-shop",
+        name: "Tuck Shop",
+        category: "miscellaneous",
+        type: "building",
+
+        description: "A convenient campus shop offering everyday essentials for students and staff.",
+
+        schedule: {
+            weekdays: {
+                open: "09:00",
+                close: "17:00"
+            },
+            weekends: {
+                closed: true
+            }
+        },
+
+        access: [
+            "Prospective Students",
+            "Students",
+            "Parents",
+            "Visitors",
+            "Staff"
+        ],
+
+        facilities: [
+            "Stationery",
+            "Daily Essentials",
         ]
     },
     // Hostels -- Girls
@@ -1080,9 +1246,9 @@ export const locations = [
     createParking("parking-bus", "Bus Parking"),
     createParking("parking-chaivyanjan-left", "Car Parking"),
     createParking("parking-chaivyanjan-car", "Car Parking"),
+    createParking("parking-tesla", "Car Parking"),
 
     // Sports Facilities
-    createGround("sports-building", "Sportorium"),
     createGround("sports-area", "Sports Arena"),
 
     // Grounds & Parks
@@ -1090,12 +1256,12 @@ export const locations = [
     createGround("beta-zone", "Beta Zone"),
     createGround("chsf-park", "CHSF Park"),
     createGround("chitkara-woods", "Chitkara Woods"),
-    createGround("chitkara-university-a", "Chitkara University"),
-    createGround("chitkara-university-b", "Chitkara University"),
+    createGround("chitkara-university", "Chitkara University"),
     createGround("park-of-scluptures", "Park of Sculptures"),
     createGround("alpha-zone", "Alpha Zone"),
-    createGround("omega-zone-side", "Omega Zone"),
-    createGround("omega-zone-bottom", "Omega Zone")
+    createGround("omega-zone", "Omega Zone"),
+    createGround("martin-fountain", "Martin Fountain"),
+
 ];
 
 function createHostel(id, name, gender) {
@@ -1180,16 +1346,12 @@ function createFoodOutlet(id, name) {
         description:
             "Food outlet serving meals and refreshments.",
 
-        access: [
-            "Students",
-            "Faculty",
-            "Staff",
-            "Visitors"
-        ],
-
+        access: ["Students", "Faculty", "Staff", "Visitors"],
         facilities: [
-            "Seating Area",
-            "Food & Beverages"
+            "Meals",
+            "Snacks",
+            "Beverages",
+            "Seating"
         ]
     };
 }
@@ -1217,19 +1379,14 @@ function createGround(id, name) {
         description:
             "Outdoor campus ground and recreational area.",
 
-        access: [
-            "Students",
-            "Faculty",
-            "Staff",
-            "Visitors"
-        ],
-
+        access: ["Students", "Faculty", "Staff", "Visitors"],
         facilities: [
-            "Open Recreation Area",
-            "Walking Space",
-            "Outdoor Activities"
+            "Football",
+            "Cricket",
+            "Athletics",
+            "Outdoor Events"
         ]
-    };
+    }
 }
 
 

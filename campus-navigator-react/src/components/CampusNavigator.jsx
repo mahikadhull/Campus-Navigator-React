@@ -6,7 +6,7 @@ import InfoPanel from "./InfoPanel";
 import Modal from "./Modal";
 import CampusLegend from "./CampusLegend";
 
-import {TransformWrapper,TransformComponent} from "react-zoom-pan-pinch";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 
 function CampusNavigator() {
@@ -17,6 +17,8 @@ function CampusNavigator() {
 
     const [aboutOpen, setAboutOpen] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
+    const [recentOpen, setRecentOpen] = useState(false);
+    const [howToUseOpen, setHowToUseOpen] = useState(false);
 
     const [isInfoOpen, setIsInfoOpen] = useState(
         window.innerWidth >= 1024
@@ -27,11 +29,11 @@ function CampusNavigator() {
 
 
     useEffect(() => {
-            document.documentElement.setAttribute("data-theme",
-            darkMode 
-            ? "dark" 
-            : "light");
-        }, [darkMode]);
+        document.documentElement.setAttribute("data-theme",
+            darkMode
+                ? "dark"
+                : "light");
+    }, [darkMode]);
 
 
     return (
@@ -52,6 +54,8 @@ function CampusNavigator() {
                     setLegendOpen(true)
                 }
 
+                onRecentLocations={() => setRecentOpen(true)}
+                onHowToUse={() => setHowToUseOpen(true)}
                 setIsInfoOpen={setIsInfoOpen}
 
                 darkMode={darkMode}
@@ -148,9 +152,35 @@ function CampusNavigator() {
                         <br />
 
                         Built with React, CSS & SVG as a
-                        front-end project.
+                        front-end project by Campus Navigator Team with <i class="fa-regular fa-heart"
+                            style={{
+                                color: "red"
+                            }}
+                        ></i>.
                     </p>
 
+                </Modal>
+                <Modal
+                    isOpen={recentOpen}
+                    onClose={() => setRecentOpen(false)}
+                >
+                    <h2 style={{ color: "var(--text-primary)" }}>Recent Locations</h2>
+
+                    <p>
+                        This feature is coming soon!
+                    </p>
+                </Modal>
+                <Modal
+                    isOpen={howToUseOpen}
+                    onClose={() => setHowToUseOpen(false)}
+                >
+                    <h2 style={{ color: "var(--text-primary)" }}>
+                        How to Use
+                    </h2>
+
+                    <p style={{ color: "var(--text-secondary)" }}>
+                        This feature is coming soon!
+                    </p>
                 </Modal>
 
 
