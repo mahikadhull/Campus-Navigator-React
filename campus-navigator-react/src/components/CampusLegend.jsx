@@ -22,11 +22,6 @@ function CampusLegend({
         return null;
     }
 
-<<<<<<< HEAD
-=======
-    /*LEGEND DATA*/
-
->>>>>>> 2cd992558c045dc025eabd2d1690209c0435a2d3
     const legendItems = [
         {
             icon: "🎓",
