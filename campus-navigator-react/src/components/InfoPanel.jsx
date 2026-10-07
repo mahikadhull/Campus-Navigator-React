@@ -1,10 +1,11 @@
+import { dijkstra } from "../utils/dijkstra";
 import { getCurrentStatus } from "../utils/status";
 
-function InfoPanel({ selectedLocation, isInfoOpen, setIsInfoOpen }) {
+function InfoPanel({ selectedLocation, isInfoOpen, setIsInfoOpen,setCurrentLocation, handleNavigationUI,setToastActive,setToastContent }) {
 
-    const status = selectedLocation
-        ? getCurrentStatus(selectedLocation)
-        : null;
+    // const status = selectedLocation
+    //     ? getCurrentStatus(selectedLocation)
+    //     : null;
 
     return (
         <aside id="info-panel">
@@ -68,7 +69,7 @@ function InfoPanel({ selectedLocation, isInfoOpen, setIsInfoOpen }) {
 
                         <p id="status">
                             <strong>Status:</strong>{" "}
-                            {status}
+                            {}
                         </p>
                         <section className="info-section">
                             <h4>Facilities</h4>
@@ -81,9 +82,16 @@ function InfoPanel({ selectedLocation, isInfoOpen, setIsInfoOpen }) {
                                 ))}
                             </div>
                         </section>
+                        <button onClick={()=>{
+                            setCurrentLocation(selectedLocation);
+                            setToastActive(true);
+                            setToastContent("setcurrentlocation");
+                        }
+                        }>Set as Current Location</button>
+                        <button onClick={()=> handleNavigationUI() }>Navigate</button>
+                        
                     </>
                 )}
-
             </div>
 
         </aside>

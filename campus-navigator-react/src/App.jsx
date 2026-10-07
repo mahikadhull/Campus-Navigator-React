@@ -1,18 +1,16 @@
 import LandingPage from "./components/LandingPage";
 import CampusNavigator from "./components/CampusNavigator";
+import {Routes,Route} from "react-router-dom"
 
-import {useState} from "react";
 import "./App.css";
 
 function App() {
-  const [showLanding,setShowLanding] = useState(true);
-
-    return (
-    <>
-      {showLanding 
-          ? (<LandingPage onExplore={()=>setShowLanding(false)}/>) 
-          : (<CampusNavigator/>)}
-    </>
-  );
+  
+    return(
+      <Routes>
+        <Route path='/' element={<LandingPage />}></Route>
+        <Route path='/campus-navigator' element={<CampusNavigator />}></Route>
+      </Routes>
+    );
 }
 export default App;

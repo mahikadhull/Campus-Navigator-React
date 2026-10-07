@@ -1,11 +1,12 @@
 import { locations } from "../data/locations";
 
-function Filters({ selectedCategory, setSelectedCategory }) {
+function Filters({ selectedCategory, setSelectedCategory, filtersOpen}) {
     const categories = [
         "all",
         ...new Set(locations.map(location => location.category))
     ];
     return (
+        filtersOpen &&
         <section id="filters-container">
             <h5>Explore</h5>
             <section id="filters">
@@ -34,6 +35,7 @@ function Filters({ selectedCategory, setSelectedCategory }) {
                 ))}
             </section>
         </section>
+            
 
     );
 }

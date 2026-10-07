@@ -1223,7 +1223,6 @@ export const locations = [
 
     // Food areas
     createFoodOutlet("square-2", "Square-2"),
-    createFoodOutlet("square-1", "Square-1"),
     createFoodOutlet("grab-go", "Grab & Go"),
     createFoodOutlet("belgian-waffel", "The Belgian Waffel"),
     createFoodOutlet("bev-cafe", "Bev Cafe"),
@@ -1236,6 +1235,46 @@ export const locations = [
     createFoodOutlet("chai-vyanjan", "Chai Vyanjan"),
     createFoodOutlet("haveli", "The Haveli"),
     createFoodOutlet("dhaba", "The Indian Dhaba"),
+     {
+        id: 'square-1',
+        name: 'Square 1',
+        category: "food",
+        type: "restaurant",
+
+        schedule: {
+            weekdays: {
+                open: "00:00",
+                close: "23:59"
+            },
+
+            weekends: {
+                open: "00:00",
+                close: "23:59"
+            }
+        },
+
+        description:
+            "Food outlet serving meals and refreshments.",
+
+        access: ["Students", "Faculty", "Staff", "Visitors"],
+        facilities: [
+            "Meals",
+            "Snacks",
+            "Beverages",
+            "Seating"
+        ],
+        subOutlets: [
+            {
+                0: ['dominos','Keventers','Speedy Chow']
+            },
+            {
+                1:['laPinozz Pizza','Momos Hunter x The Bun Story','Chai Nagri']
+            },
+            {
+                2:['Panjaab 13','The South Circle','Paratha Corner']
+            }
+        ]
+    },
 
     // Parkings
 

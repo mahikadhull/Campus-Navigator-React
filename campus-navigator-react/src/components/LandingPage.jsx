@@ -1,16 +1,17 @@
 import { useState } from "react";
 import './landingpage.css';
-function LandingPage({ onExplore }) {
+import MobileMenu from "./MobileMenu";
+import { useNavigate } from "react-router-dom";
+function LandingPage() {
     const [videoStarted, setVideoStarted] = useState(false);
     const [videoEnded, setVideoEnded] = useState(false);
+    const navigate = useNavigate();
 
 
     const [leaving, setLeaving] = useState(false);
     function handleExplore() {
         setLeaving(true);
-        setTimeout(() => {
-            onExplore();
-        }, 800)
+        navigate("/campus-navigator");
     }
     return (
         <div className={`landing-page ${leaving ? "leaving" : ""}`}>
@@ -42,10 +43,13 @@ function LandingPage({ onExplore }) {
                     Your campus. Your journey. Your experience.
                 </p>
                 <br />
-                <button id="landing-explore-btn" onClick={handleExplore}>Explore Campus 
-            
-                </button>
+                <button id="landing-explore-btn" onClick={handleExplore}>Explore Campus</button>
+                <MobileMenu/>
             </div>
+            <button id="landing-skip-btn" onClick={()=>{
+                navigate("/campus-navigator");
+            }}
+            style={{zIndex:10000}}>Skip...</button>
         </div>
     );
 }
