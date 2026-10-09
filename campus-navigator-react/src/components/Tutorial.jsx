@@ -113,7 +113,7 @@ function Tutorial({ active, onClose }) {
             <div className="tutorial-tooltip">
 
                 <div className="tutorial-step-count">
-                    Step {step + 1} of {steps.length}
+                    Step {step + 1}
                 </div>
 
                 <h3>

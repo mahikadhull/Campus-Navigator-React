@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState} from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { locations } from "../data/locations";
 
@@ -10,11 +10,12 @@ function Map({
     setIsInfoOpen,
     onLocationSelect,
     currentLocation,
-    setMenuOpen
+    setMenuOpen, mapTheme, setMapTheme
 }) {
 
     const mapRef = useRef(null);
     const [tooltip, setTooltip] = useState({});
+    const [mapThemeMenu, openMapThemeMenu] = useState(false);
 
 
     /*
@@ -29,10 +30,10 @@ function Map({
         if (!building) {
             return;
         }
-       if( document.querySelector(".navigationUI").classList.contains("active")){
+        if (document.querySelector(".navigationUI").classList.contains("active")) {
             alert("Map Access Disabled during Navigation. Exit navigation mode to access the map.");
             return;
-       };
+        };
 
 
         const location =
@@ -49,10 +50,10 @@ function Map({
         setTooltip({
             name: location.name,
             x: box.left -
-            mapBox.left +
-            box.width / 2,
+                mapBox.left +
+                box.width / 2,
             y: box.top -
-            mapBox.top
+                mapBox.top
         });
 
 
@@ -381,23 +382,64 @@ function Map({
 
     return (
         <section className="map-section">
-
+            <button id="map-theme-btn" onClick={() => {
+                openMapThemeMenu(!mapThemeMenu);
+            }}>{!mapThemeMenu ? <i class="fa-solid fa-ellipsis-vertical"></i> : <i className="fa-solid fa-xmark"></i>}</button>
             <div
                 id="map-container"
                 ref={mapRef}
             />
-            {tooltip && (
-                <div
-                    className={tooltip? "map-tooltip active" : "map-tooltip"}
-                    style={{
-                        left: tooltip.x,
-                        top: tooltip.y
-                    }}
-                >
-                    {tooltip.name}
-                </div>
-            )}
+            
+            {
+                mapThemeMenu && (
+                    <div id="map-theme-menu">
+                        <button
+                            className={`theme-option ${mapTheme === "campus" ? "active" : ""}`}
+                            onClick={() => setMapTheme("campus")}
+                        >
+                            <i className="fa-solid fa-leaf"></i>
+                            <span> Campus </span>
+                            <i className="fa-solid fa-check-circle check"></i>
+                        </button>
 
+                        <button
+                            className={`theme-option ${mapTheme === "midnight" ? "active" : ""}`}
+                            onClick={() => setMapTheme("midnight")}
+                        >
+                            <i className="fa-solid fa-moon"></i>
+                            <span> Midnight </span>
+                            <i className="fa-solid fa-check-circle check"></i>
+                        </button>
+
+                        <button
+                            className={`theme-option ${mapTheme === "cartographic" ? "active" : ""}`}
+                            onClick={() => setMapTheme("cartographic")}
+                        >
+                            <i className="fa-solid fa-map"></i>
+                            <span> Cartographic </span>
+                            <i className="fa-solid fa-check-circle check"></i>
+                        </button>
+
+                        <button
+                            className={`theme-option ${mapTheme === "blueprint" ? "active" : ""}`}
+                            onClick={() => setMapTheme("blueprint")}
+                        >
+                            <i className="fa-solid fa-compass-drafting"></i>
+                            <span> Blueprint </span>
+                            <i className="fa-solid fa-check-circle check"></i>
+                        </button>
+
+                        <button
+                            className={`theme-option ${mapTheme === "monochrome" ? "active" : ""}`}
+                            onClick={() => setMapTheme("monochrome")}
+                        >
+                            <i className="fa-solid fa-circle-half-stroke"></i>
+                            <span> Monochrome </span>
+                            <i className="fa-solid fa-check-circle check"></i>
+                        </button>
+                    </div>
+                )
+            }
         </section>
     );
 }

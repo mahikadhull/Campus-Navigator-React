@@ -6,10 +6,10 @@ function MyLocation({currentLocation,setSelectedLocation}) {
         if (currentLocation)  setSelectedLocation(currentLocation);
     }
     return (
-        <>
+        <div id="current-location-container">
         <h5>Current Location</h5>
         <button onClick={()=>handleLocationClick()}>{currentLocation ? `${currentLocation.name}` : "No location selected."}</button>
-        </>
+        </div>
     )
     
 }

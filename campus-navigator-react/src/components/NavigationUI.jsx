@@ -9,6 +9,8 @@ export default function ({ currentLocation, selectedLocation, walkTime,isInfoOpe
     document.querySelector("#search-wrapper").classList.remove('hidden');
     setIsInfoOpen(!isInfoOpen);
     setFiltersOpen(filtersOpen);
+    document.querySelector("header").style.display = "";
+    document.querySelector("#current-location-container").style.display = "";
 
   }
   return (

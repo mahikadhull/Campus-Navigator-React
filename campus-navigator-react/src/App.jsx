@@ -3,6 +3,8 @@ import CampusNavigator from "./components/CampusNavigator";
 import {Routes,Route} from "react-router-dom"
 
 import "./App.css";
+import "./components/howtouse.css";
+import "./components/navigationui.css";
 
 function App() {
   

@@ -60,6 +60,7 @@ function CampusNavigator() {
 
     const [toastActive, setToastActive] = useState(false);
     const [toastContent, setToastContent] = useState(null);
+    const [mapTheme, setMapTheme] = useState("campus");
 
 
     const [recentLocations, setRecentLocations] = useState(() => {
@@ -83,13 +84,24 @@ function CampusNavigator() {
             alert(`You are already in ${currentLocation.name}.`);
             return;
         }
+
+
         document.querySelector(".navigationUI").classList.add("active");
+        document.querySelector("header").style.display = "none";
+        document.querySelector("#current-location-container").style.display = "none";
+
         setIsInfoOpen(false);
         setFiltersOpen(false);
         const path = dijkstra(campusGraph, currentLocation.id, selectedLocation.id);
         const time = estimatedTime(campusGraph, path);
         setWalkTime(time);
         setMenuOpen(false);
+        if (!path || path.length === 0) {
+            alert("No route found between these locations.");
+            return;
+        }
+        // Highlight the road segments in the returned path.
+        highlightRoute(path);
     }
 
 
@@ -136,7 +148,7 @@ function CampusNavigator() {
 
 
     return (
-        <>
+        <div data-theme={mapTheme}>
             <Header
                 search={search}
                 setSearch={setSearch}
@@ -233,6 +245,8 @@ function CampusNavigator() {
                                 currentLocation
                             }
                             setMenuOpen={setMenuOpen}
+                            mapTheme={mapTheme}
+                            setMapTheme={setMapTheme}
 
                         />
 
@@ -296,7 +310,7 @@ function CampusNavigator() {
                             title='Explore U.'
                             content={
                                 <>
-                                    <strong>{selectedLocation.name}</strong> has been set as your current location!
+                                    <strong>{currentLocation.name}</strong> has been set as your current location!
                                 </>
                             }
                             onClose={() => setToastActive(false)}
@@ -304,15 +318,6 @@ function CampusNavigator() {
                         </Toast>
                     )
                 }
-
-
-
-
-
-
-
-
-
 
                 {tutorialActive && (
                     <Tutorial
@@ -324,7 +329,7 @@ function CampusNavigator() {
                 )}
 
             </main>
-        </>
+        </div>
     );
 }
 

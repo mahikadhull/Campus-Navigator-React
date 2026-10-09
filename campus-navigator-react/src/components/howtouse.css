@@ -1,0 +1,131 @@
+
+.how-to-use {
+    background: var(--surface);
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+    max-height: 70vh;
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-accent) var(--surface);
+}
+
+.how-to-section {
+    background: var(--surface);
+    border: 1px solid ;
+    border-color: var(--border);
+    padding: 12px;
+    cursor: pointer;
+}
+
+.how-to-section h3 {
+    color: var(--heading);
+}
+
+.how-to-section h3 i {
+    color: var(--text-accent);
+}
+
+.how-to-section p {
+    color: var(--text-secondary);
+}
+
+.how-to-tip {
+    background: var(--background);
+    border-color: var(--border);
+    border-left-color: var(--text-accent);
+    padding: 12px;
+}
+
+.how-to-tip strong,
+.how-to-tutorial p {
+    color: var(--heading);
+}
+
+.how-to-tip strong i {
+    color: var(--text-accent);
+}
+
+.how-to-tutorial button {
+    background: var(--heading);
+    color: var(--text-on-dark);
+    border-color: var(--border);
+}
+
+.how-to-section:hover {
+    border-color: var(--text-accent);
+}
+
+.how-to-tutorial button:hover {
+    background: var(--text-accent);
+    color: var(--text-on-dark);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.how-to-tutorial button:focus-visible {
+    outline-color: var(--text-accent);
+}
+
+
+/* =========================
+   HOW TO USE — DARK THEME
+   Change .dark-theme to your
+   actual dark-mode selector.
+========================= */
+
+.dark-theme .how-to-use {
+    background: var(--surface);
+    color: var(--text-primary);
+}
+
+.dark-theme .how-to-section {
+    background: var(--card-bg, var(--surface));
+    border-color: var(--border);
+}
+
+.dark-theme .how-to-section h3 {
+    color: var(--heading);
+}
+
+.dark-theme .how-to-section h3 i {
+    color: var(--text-accent);
+}
+
+.dark-theme .how-to-section p {
+    color: var(--text-secondary);
+}
+
+.dark-theme .how-to-tip {
+    background: var(--background);
+    border-color: var(--border);
+    border-left-color: var(--text-accent);
+}
+
+.dark-theme .how-to-tip strong,
+.dark-theme .how-to-tutorial p {
+    color: var(--heading);
+}
+
+.dark-theme .how-to-tip strong i {
+    color: var(--text-accent);
+}
+
+.dark-theme .how-to-tutorial button {
+    background: var(--heading);
+    color: var(--text-on-dark);
+    border-color: var(--border);
+}
+
+.dark-theme .how-to-section:hover {
+    border-color: var(--text-accent);
+}
+
+.dark-theme .how-to-tutorial button:hover {
+    background: var(--text-accent);
+    color: var(--text-on-dark);
+}
+
+.dark-theme .how-to-tutorial button:focus-visible {
+    outline-color: var(--text-accent);
+}

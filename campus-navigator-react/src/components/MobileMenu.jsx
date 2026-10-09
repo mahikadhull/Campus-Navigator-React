@@ -13,7 +13,7 @@ function MobileMenu({menuOpen,onHowToUse,onTheme,darkMode,onAbout,onRecent,onLeg
             <button onClick={onHowToUse}>How to Use</button>
             <button onClick={onRecent}>Recent Locations</button>
             <button onClick={onLegend}>Campus Legend</button>
-            <button onClick={onTheme}>{darkMode ? "Light Theme" : "Dark Theme"}</button>
+            <button onClick={onTheme}>{darkMode ? "Light Mode" : "Dark Mode"}</button>
             <button onClick={onAbout} id="about-btn">About</button>
         </div>
     );

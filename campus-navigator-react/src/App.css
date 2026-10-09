@@ -147,6 +147,308 @@
 
     --btn-on-dark: #1D3928;
 }
+[data-theme="midnight"] {
+
+    /* =========================
+       BACKGROUND / SURFACES
+       ========================= */
+
+    --surface: #111827;
+    --border: #374151;
+    --map-surface: #1F2937;
+
+
+    /* =========================
+       CATEGORY COLORS
+       ========================= */
+
+    --all: #374151;
+
+    --ground: #24513A;
+    --academic: #24496B;
+    --food: #70452D;
+    --administration: #454545;
+    --hostel: #503A6B;
+    --health: #683B3B;
+    --parking: #6B5A20;
+    --parks: #285238;
+    --miscellaneous: #66521A;
+
+
+    /* =========================
+       MAP ELEMENTS
+       ========================= */
+
+    --background: #263A2B;
+    --paths: #59616A;
+    --NH: #68727E;
+
+
+    /* =========================
+       CATEGORY STROKES
+       ========================= */
+
+    --all_stroke: #9CA3AF;
+
+    --ground_stroke: #4ADE80;
+    --academic_stroke: #60A5FA;
+    --food_stroke: #FB923C;
+    --administration_stroke: #A3A3A3;
+    --hostel_stroke: #C084FC;
+    --health_stroke: #F87171;
+    --parking_stroke: #FACC15;
+    --parks_stroke: #4ADE80;
+    --miscellaneous_stroke: #FBBF24;
+
+
+    /* =========================
+       OTHER MAP STROKES
+       ========================= */
+
+    --background_stroke: #41634A;
+    --paths_stroke: #737B84;
+    --NH_stroke: #9CA3AF;
+
+
+    /* =========================
+       TEXT
+       ========================= */
+
+    --text-primary: #F9FAFB;
+    --text-secondary: #D1D5DB;
+    --text-muted: #9CA3AF;
+
+    --heading: #F3F4F6;
+    --text-accent: #6EE7B7;
+    --text-on-dark: #FFFFFF;
+}
+[data-theme="cartographic"] {
+
+    /* =========================
+       BACKGROUND / SURFACES
+       ========================= */
+
+    --surface: #F6F0DF;
+    --border: #CFC2A3;
+    --map-surface: #E8DFC8;
+
+
+    /* =========================
+       CATEGORY COLORS
+       ========================= */
+
+    --all: #D8CFB8;
+
+    --ground: #B8C99B;
+    --academic: #AFC5D8;
+    --food: #D9A276;
+    --administration: #C9C2B5;
+    --hostel: #C3A9C9;
+    --health: #D7A6A0;
+    --parking: #DEC779;
+    --parks: #A9C39A;
+    --miscellaneous: #D1B65B;
+
+
+    /* =========================
+       MAP ELEMENTS
+       ========================= */
+
+    --background: #B7C79E;
+    --paths: #A4977D;
+    --NH: #837A6B;
+
+
+    /* =========================
+       CATEGORY STROKES
+       ========================= */
+
+    --all_stroke: #756D5E;
+
+    --ground_stroke: #627B50;
+    --academic_stroke: #526F87;
+    --food_stroke: #9D6540;
+    --administration_stroke: #716C64;
+    --hostel_stroke: #765C7D;
+    --health_stroke: #925F5A;
+    --parking_stroke: #927A28;
+    --parks_stroke: #58754A;
+    --miscellaneous_stroke: #856B20;
+
+
+    /* =========================
+       OTHER MAP STROKES
+       ========================= */
+
+    --background_stroke: #71815D;
+    --paths_stroke: #706957;
+    --NH_stroke: #5E574D;
+
+
+    /* =========================
+       TEXT
+       ========================= */
+
+    --text-primary: #3E3A32;
+    --text-secondary: #625C50;
+    --text-muted: #807869;
+
+    --heading: #343D32;
+    --text-accent: #5B6F52;
+    --text-on-dark: #FFFFFF;
+}
+
+[data-theme="blueprint"] {
+
+    /* =========================
+       BACKGROUND / SURFACES
+       ========================= */
+
+    --surface: #0F2A43;
+    --border: #315B7D;
+    --map-surface: #123653;
+
+
+    /* =========================
+       CATEGORY COLORS
+       ========================= */
+
+    --all: #315B7D;
+
+    --ground: #245C55;
+    --academic: #24517A;
+    --food: #76542D;
+    --administration: #40586A;
+    --hostel: #554477;
+    --health: #713F4A;
+    --parking: #6A5A25;
+    --parks: #275A47;
+    --miscellaneous: #685821;
+
+
+    /* =========================
+       MAP ELEMENTS
+       ========================= */
+
+    --background: #174A42;
+    --paths: #4B6F87;
+    --NH: #6688A0;
+
+
+    /* =========================
+       CATEGORY STROKES
+       ========================= */
+
+    --all_stroke: #9CC2D8;
+
+    --ground_stroke: #55C7A1;
+    --academic_stroke: #63B3ED;
+    --food_stroke: #F6AD55;
+    --administration_stroke: #A9BCCB;
+    --hostel_stroke: #C4A7E7;
+    --health_stroke: #F28B9A;
+    --parking_stroke: #F6D365;
+    --parks_stroke: #68D391;
+    --miscellaneous_stroke: #F6C85F;
+
+
+    /* =========================
+       OTHER MAP STROKES
+       ========================= */
+
+    --background_stroke: #398078;
+    --paths_stroke: #739AB2;
+    --NH_stroke: #A7C4D8;
+
+
+    /* =========================
+       TEXT
+       ========================= */
+
+    --text-primary: #E6F1F7;
+    --text-secondary: #B9CBD8;
+    --text-muted: #86A2B5;
+
+    --heading: #F0F7FA;
+    --text-accent: #67E8F9;
+    --text-on-dark: #FFFFFF;
+}
+
+[data-theme="monochrome"] {
+
+    /* =========================
+       BACKGROUND / SURFACES
+       ========================= */
+
+    --surface: #F5F5F5;
+    --border: #C7C7C7;
+    --map-surface: #E5E5E5;
+
+
+    /* =========================
+       CATEGORY COLORS
+       ========================= */
+
+    --all: #D4D4D4;
+
+    --ground: #C8C8C8;
+    --academic: #D2D2D2;
+    --food: #BDBDBD;
+    --administration: #C5C5C5;
+    --hostel: #CACACA;
+    --health: #D0D0D0;
+    --parking: #B7B7B7;
+    --parks: #C1C1C1;
+    --miscellaneous: #B0B0B0;
+
+
+    /* =========================
+       MAP ELEMENTS
+       ========================= */
+
+    --background: #D0D0D0;
+    --paths: #999999;
+    --NH: #707070;
+
+
+    /* =========================
+       CATEGORY STROKES
+       ========================= */
+
+    --all_stroke: #555555;
+
+    --ground_stroke: #666666;
+    --academic_stroke: #555555;
+    --food_stroke: #555555;
+    --administration_stroke: #555555;
+    --hostel_stroke: #555555;
+    --health_stroke: #555555;
+    --parking_stroke: #555555;
+    --parks_stroke: #555555;
+    --miscellaneous_stroke: #555555;
+
+
+    /* =========================
+       OTHER MAP STROKES
+       ========================= */
+
+    --background_stroke: #777777;
+    --paths_stroke: #666666;
+    --NH_stroke: #444444;
+
+
+    /* =========================
+       TEXT
+       ========================= */
+
+    --text-primary: #222222;
+    --text-secondary: #4A4A4A;
+    --text-muted: #707070;
+
+    --heading: #171717;
+    --text-accent: #333333;
+    --text-on-dark: #FFFFFF;
+}
 
 body,
 header,
@@ -390,6 +692,123 @@ main {
 
 
 /* Map */
+#map-theme-btn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    border-radius: 50%;
+    background: var(--surface);
+    color: var(--heading);
+    border: 1px solid var(--border);
+    font-size: 18px;
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(38, 50, 56, 0.16);
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+#map-theme-btn:hover, .theme-btn.active {
+    background: var(--heading);
+    color: var(--text-on-dark);
+    box-shadow: 0 6px 16px rgba(38, 50, 56, 0.24);
+}
+
+/* Campus — natural greens */
+.theme-option:nth-child(1) {
+    background: #E4F1E5;
+    color: #245C35;
+    border-color: #B4D5B9;
+}
+
+/* Midnight — dark navy */
+.theme-option:nth-child(2) {
+    background: #202B43;
+    color: #DCE8FF;
+    border-color: #455A7C;
+}
+
+/* Cartographic — warm paper */
+.theme-option:nth-child(3) {
+    background: #F5EAD2;
+    color: #79552D;
+    border-color: #D9C49C;
+}
+
+/* Blueprint — technical blue */
+.theme-option:nth-child(4) {
+    background: #DCEBFA;
+    color: #174F91;
+    border-color: #A7C8EC;
+}
+
+/* Monochrome — grayscale */
+.theme-option:nth-child(5) {
+    background: #E7E7E7;
+    color: #353535;
+    border-color: #BDBDBD;
+}
+.theme-option{
+    border: none;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.theme-option:hover, .theme-option.active{
+    box-shadow: 0 0 0 2px var(--surface, #FFFFFF);
+    outline: 2px solid currentColor;
+    outline-offset: 1px;
+    font-weight: 700;
+    transform: translateX(-5px);
+}
+.check{
+    display: none;
+}
+.theme-option.active .check{
+    display: inline;
+}
+
+
+
+
+
+#map-theme-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    animation: mapMenuFadein 0.2s ease forwards;
+    width:200px;
+    padding: 12px;
+    gap: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 8px;
+
+    box-shadow: 0 6px 20px rgba(38, 50, 56, 0.15);
+}
+@keyframes mapMenuFadein{
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    50%{
+        transform:translateY(-10px);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .map-section {
     width: 100%;
     height: calc(100vh - 60px);
@@ -397,6 +816,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 #map-container {
@@ -671,6 +1091,14 @@ main {
     display: none;
 }
 
+.road.route-highlight {
+    stroke: #FF8A00 !important;
+    stroke-width: 10px !important;
+    stroke-opacity: 1 !important;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    filter: drop-shadow(0 0 4px rgba(255, 138, 0, 0.8));
+}
 
 
 /* MODAL */
