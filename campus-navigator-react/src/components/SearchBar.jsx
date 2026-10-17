@@ -1,16 +1,28 @@
 import { locations } from "../data/locations";
+import { foodOutlets } from "../data/FoodOutlets";
 
-function SearchBar({search,setSearch,setSelectedLocation,setIsInfoOpen}) {
+function SearchBar({search,setSearch,setSelectedLocation,setIsInfoOpen,isFood}) {
     const query = search.trim().toLowerCase();
-    const matches = query === ""
-    ? []
-    : locations.filter(location=>
-        location.name.toLowerCase().includes(query)
-    );
+    let matches = [];
+    if(isFood) {
+        matches = foodOutlets.filter(foodOutlet=>
+            foodOutlet.menu.some(item=>
+                item.name.toLowerCase().includes(query)
+            ) ||
+            foodOutlet.name.toLowerCase().includes(query)
+        )
+    }else {
+        matches = locations.filter(location=>
+        location.name.toLowerCase().includes(query) ||
+        location.description.toLowerCase().includes(query) ||
+        location.category.toLowerCase().includes(query)
+    )
+    }
     function handleResultClick(location) {
         setSelectedLocation(location);
         setIsInfoOpen(true);
-        setSearch("");
+        setSearch(location.name);
+        document.querySelector('#search-results').classList.add('hidden');
     }
     return (
         <div className="search-container">

@@ -1,0 +1,66 @@
+
+.navigationUI {
+    background: var(--surface);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 24px rgba(38, 50, 56, 0.16);
+}
+
+/* Current location */
+
+#navigation-current-loc {
+    color: var(--text-secondary);
+    background: var(--card-bg, var(--surface));
+    border: 1px solid var(--border);
+}
+
+/* Destination */
+
+#navigation-destination-loc {
+    color: var(--heading);
+    background: var(--card-bg, var(--surface));
+    border: 1px solid var(--border);
+    font-weight: 600;
+}
+
+/* Route indicator between locations */
+
+.navigationUI > div:first-of-type {
+    color: var(--text-accent);
+}
+
+/* Bottom content area */
+
+#navigation-content {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+}
+
+/* Estimated walking time */
+
+#navigation-estimated-time {
+    color: var(--text-secondary);
+}
+
+#navigation-estimated-time span {
+    color: var(--text-accent);
+    font-weight: 700;
+}
+
+/* Exit button */
+
+#navigation-exit-btn {
+    background: var(--heading);
+    color: var(--text-on-dark);
+    border: 1px solid var(--border);
+}
+
+#navigation-exit-btn:hover {
+    background: var(--text-accent);
+    color: var(--text-on-dark);
+}
+
+#navigation-exit-btn:focus-visible {
+    outline: 2px solid var(--text-accent);
+    outline-offset: 3px;
+}

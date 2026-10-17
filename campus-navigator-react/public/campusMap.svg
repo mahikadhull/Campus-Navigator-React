@@ -1,214 +1,291 @@
 <svg width="859" height="857" viewBox="0 0 859 857" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 <rect opacity="0.3" x="3.29266" y="14.6821" width="855" height="842" fill="url(#pattern0_8_39)"/>
-<rect id="explore-hub" class="location miscellaneous" x="383.293" y="399.682" width="21" height="39" fill="#FFE082"/>
-<!-- <rect id="x="502.293" y="276.682" width="21" height="17" fill="#FFE082"/> -->
-<rect id="tuck-shop" class="location miscellaneous"x="384.293" y="467.682" width="15" height="16" fill="#FFE082"/>
-<rect id="apple-experience" class="location miscellaneous" x="465.293" y="483.682" width="16" height="20" fill="#FFE082"/>
-<rect id="salon" class="location miscellaneous" x="478.293" y="440.682" width="5" height="9" fill="#FFE082"/>
-<rect id="ATM" class="location miscellaneous" x="478.293" y="430.682" width="5" height="9" fill="#FFE082"/>
-<rect id="sports-building" class="location miscellaneous" x="197.293" y="332.682" width="118" height="26" fill="#ffe082"/>
+<rect id="explore-hub" class="location miscellaneous" x="383.293" y="399.682" width="21" height="39" fill="var(--miscellaneous)  "/>
+<rect id="tuck-shop" class="location miscellaneous"x="384.293" y="467.682" width="15" height="16" fill="var(--miscellaneous)  "/>
+<rect id="apple-experience" class="location miscellaneous" x="465.293" y="483.682" width="16" height="20" fill="var(--miscellaneous)  "/>
+<rect id="salon" class="location miscellaneous" x="478.293" y="440.682" width="5" height="9" fill="var(--miscellaneous)  "/>
+<rect id="ATM" class="location miscellaneous" x="478.293" y="430.682" width="5" height="9" fill="var(--miscellaneous)  "/>
+<rect id="sports-building" class="location miscellaneous" x="197.293" y="332.682" width="118" height="26" fill="var(--miscellaneous)  "/>
 
-<rect id="ramanujan-block" class="location academic" x="219.293" y="352.682" width="66" height="28" fill="#DCEEFF"/>
-<rect id="sports-area" class="location ground" x="185.616" y="273.564" width="139" height="39" transform="rotate(0.923913 185.616 273.564)" fill="#cff3d9"/>
+<rect id="ramanujan-block" class="location academic" x="219.293" y="352.682" width="66" height="28" fill="var(--academic) "/>
+<rect id="sports-area" class="location ground" x="185.616" y="273.564" width="139" height="39" transform="rotate(0.923913 185.616 273.564)" fill="var(--ground) "/>
 <!-- Hostels -->
-<rect id="armstrong-hostel" class="location hostel"  x="591.293" y="650.682" width="57" height="17" fill="#EFE3FF"/>
-<rect id="magallen-hostel" class="location hostel" x="587.293" y="681.682" width="61" height="19" fill="#EFE3FF"/>
-<rect id="marco-polo-hostel" class="location hostel" x="561.293" y="595.682" width="17" height="72" fill="#EFE3FF"/>
-<rect id="archemedes-hostel" class="location hostel" x="664.293" y="721.682" width="115" height="26" fill="#EFE3FF"/>
-<rect id="franklin-hostel" class="location hostel" x="664.293" y="771.682" width="115" height="28" fill="#EFE3FF"/>
-<rect id="alfred-nobel-hostel" class="location hostel" x="663.293" y="820.682" width="115" height="26" fill="#EFE3FF"/>
-<rect id="aristotle-hostel" class="location hostel" x="664.293" y="681.682" width="65" height="22" fill="#EFE3FF"/>
+<rect id="armstrong-hostel" class="location hostel"  x="591.293" y="650.682" width="57" height="17" fill="var(--hostel)"/>
+<rect id="magallen-hostel" class="location hostel" x="587.293" y="681.682" width="61" height="19" fill="var(--hostel)"/>
+<rect id="marco-polo-hostel" class="location hostel" x="561.293" y="595.682" width="17" height="72" fill="var(--hostel)"/>
+<rect id="archemedes-hostel" class="location hostel" x="664.293" y="721.682" width="115" height="26" fill="var(--hostel)"/>
+<rect id="franklin-hostel" class="location hostel" x="664.293" y="771.682" width="115" height="28" fill="var(--hostel)"/>
+<rect id="alfred-nobel-hostel" class="location hostel" x="663.293" y="820.682" width="115" height="26" fill="var(--hostel)"/>
+<rect id="aristotle-hostel" class="location hostel" x="664.293" y="681.682" width="65" height="22" fill="var(--hostel)"/>
 
-<rect id="pi-hostel" class="location hostel" x="722.293" y="396.682" width="31" height="146" fill="#EFE3FF"/>
-<rect id="IBN-hostel" class="location hostel" x="760.293" y="372.682" width="26" height="151" fill="#EFE3FF"/>
-<rect id="NGH-hostel" class="location hostel" x="791.293" y="372.682" width="25" height="151" fill="#EFE3FF"/>
-<rect id="vasco-hostel" class="location hostel" x="664.293" y="558.682" width="89" height="30" fill="#EFE3FF"/>
+<rect id="pi-hostel" class="location hostel" x="722.293" y="396.682" width="31" height="146" fill="var(--hostel)"/>
+<rect id="IBN-hostel" class="location hostel" x="760.293" y="372.682" width="26" height="151" fill="var(--hostel)"/>
+<rect id="NGH-hostel" class="location hostel" x="791.293" y="372.682" width="25" height="151" fill="var(--hostel)"/>
+<rect id="vasco-hostel" class="location hostel" x="664.293" y="558.682" width="89" height="30" fill="var(--hostel)"/>
 <g id="columbus-hostel" class="location hostel">
-<rect  id="columbus-hostel" class="location hostel" x="591.293" y="567.682" width="39" height="27" fill="#EFE3FF"/>
-<rect  id="columbus-hostel" class="location hostel" x="629.293" y="588.682" width="18" height="44" fill="#EFE3FF"/>
+<rect  id="columbus-hostel" class="location hostel" x="591.293" y="567.682" width="39" height="27" fill="var(--hostel)"/>
+<rect  id="columbus-hostel" class="location hostel" x="629.293" y="588.682" width="18" height="44" fill="var(--hostel)"/>
 </g>
 
-<rect id="square-2" class="location food" x="548.293" y="125.682" width="35" height="42" fill="#FFE7D6"/>
-<rect id="grab-go" class="location food" x="406.293" y="399.682" width="14" height="9" fill="#FFE7D6"/>
-<rect id="bev-cafe" class="location food" x="406.293" y="410.682" width="14" height="9" fill="#FFE7D6"/>
-<rect id="holy-scoop" class="location food" x="406.293" y="432.682" width="14" height="9" fill="#FFE7D6"/>
-<rect id="belgian-waffel" class="location food" x="406.293" y="421.682" width="14" height="9" fill="#FFE7D6"/>
-<rect id="square-1" class="location food" x="428.293" y="402.682" width="50" height="50" fill="#FFE7D6"/>
-<rect id="doful" class="location food" x="497.293" y="414.682" width="8" height="16" fill="#FFE7D6"/>
-<rect id="amul" class="location food" x="497.293" y="432.682" width="8" height="16" fill="#FFE7D6"/>
-<rect id="haveli" class="location food" x="399.293" y="467.682" width="15" height="16" fill="#FFE7D6"/>
-<rect id="first-coffee" class="location food" x="384.293" y="443.682" width="30" height="13" fill="#FFE7D6"/>
-<rect id="subway" class="location food" x="384.293" y="456.682" width="22" height="5" fill="#FFE7D6"/>
-<rect id="blue-tokai" class="location food" x="420.293" y="483.682" width="30" height="20" fill="#FFE7D6"/>
-<rect id="dhaba" class="location food" x="449.293" y="483.682" width="16" height="20" fill="#FFE7D6"/>
-<rect id="chai-vyanjan" class="location food" x="282.293" y="117.682" width="10" height="12" fill="#FFE7D6"/>
+<rect id="square-2" class="location food" x="548.293" y="125.682" width="35" height="42" fill="var(--food)"/>
+<rect id="grab-go" class="location food" x="406.293" y="399.682" width="14" height="9" fill="var(--food)"/>
+<rect id="bev-cafe" class="location food" x="406.293" y="410.682" width="14" height="9" fill="var(--food)"/>
+<rect id="holy-scoop" class="location food" x="406.293" y="432.682" width="14" height="9" fill="var(--food)"/>
+<rect id="belgian-waffel" class="location food" x="406.293" y="421.682" width="14" height="9" fill="var(--food)"/>
+<rect id="square-1" class="location food" x="428.293" y="402.682" width="50" height="50" fill="var(--food)"/>
+<rect id="doful" class="location food" x="497.293" y="414.682" width="8" height="16" fill="var(--food)"/>
+<rect id="amul" class="location food" x="497.293" y="432.682" width="8" height="16" fill="var(--food)"/>
+<rect id="haveli" class="location food" x="399.293" y="467.682" width="15" height="16" fill="var(--food)"/>
+<rect id="first-coffee" class="location food" x="384.293" y="443.682" width="30" height="13" fill="var(--food)"/>
+<rect id="subway" class="location food" x="384.293" y="456.682" width="22" height="5" fill="var(--food)"/>
+<rect id="blue-tokai" class="location food" x="420.293" y="483.682" width="30" height="20" fill="var(--food)"/>
+<rect id="dhaba" class="location food" x="449.293" y="483.682" width="16" height="20" fill="var(--food)"/>
+<rect id="chai-vyanjan" class="location food" x="282.293" y="117.682" width="10" height="12" fill="var(--food)"/>
 
-<rect id="football-ground" class="location ground" x="185.293" y="185.682" width="107" height="81" fill="#CFF3D9"/>
-<rect id="beta-zone" class="location park ground" x="408.293" y="331.682" width="78" height="54" fill="#CFF3D9"/>
-<path id="chsf-park" class="location park ground" d="M376.193 356.748L395.121 335.494L394.202 378.786L376.193 356.748Z" fill="#CFF3D9"/>
-<path id="martin-fountain" class="location park ground" d="M510.373 495.733L559.373 554.01L502.076 571.418L510.373 495.733Z" fill="#CFF3D9"/>
+<rect id="football-ground" class="location ground" x="185.293" y="185.682" width="107" height="81" fill="var(--ground) "/>
+<rect id="beta-zone" class="location park ground" x="408.293" y="331.682" width="78" height="54" fill="var(--ground) "/>
+<path id="chsf-park" class="location park ground" d="M376.193 356.748L395.121 335.494L394.202 378.786L376.193 356.748Z" fill="var(--ground) "/>
+<path id="martin-fountain" class="location park ground" d="M510.373 495.733L559.373 554.01L502.076 571.418L510.373 495.733Z" fill="var(--ground) "/>
 <g id="alpha-zone" class="location ground">
-<rect id="alpha-zone" class="location ground" x="354.293" y="108.682" width="42" height="109" fill="#CFF3D9"/>
-<path id = "alpha-zone" class="location ground" d="M355.846 217.142L399.48 89.7485L490.504 217.362L355.846 217.142Z" fill="#CFF3D9"/>
+<rect id="alpha-zone" class="location ground" x="354.293" y="108.682" width="42" height="109" fill="var(--ground) "/>
+<path id = "alpha-zone" class="location ground" d="M355.846 217.142L399.48 89.7485L490.504 217.362L355.846 217.142Z" fill="var(--ground) "/>
 </g>
 <g id="omega-zone" class="location ground">
-<rect  id="omega-zone" class="location ground" x="521.293" y="399.682" width="89" height="90" fill="#CFF3D9"/>
-<rect  id="omega-zone" class="location ground" x="566.293" y="522.682" width="126" height="19" fill="#CFF3D9"/>
+<rect  id="omega-zone" class="location ground" x="521.293" y="399.682" width="89" height="90" fill="var(--ground) "/>
+<rect  id="omega-zone" class="location ground" x="566.293" y="522.682" width="126" height="19" fill="var(--ground) "/>
 </g>
-<rect id="chitkara-woods" class="location park ground" x="342.293" y="273.682" width="52" height="41" fill="#CFF3D9"/>
+<rect id="chitkara-woods" class="location park ground" x="342.293" y="273.682" width="52" height="41" fill="var(--ground) "/>
 <g id="chitkara-university">
-<rect id="chitkara-university" class="location park ground" x="408.293" y="280.682" width="37" height="34" fill="#CFF3D9"/>
-<rect id="chitkara-university" class="location park ground" x="451.293" y="280.682" width="35" height="34" fill="#CFF3D9"/>
+<rect id="chitkara-university" class="location park ground" x="408.293" y="280.682" width="37" height="34" fill="var(--ground) "/>
+<rect id="chitkara-university" class="location park ground" x="451.293" y="280.682" width="35" height="34" fill="var(--ground) "/>
 </g>
-<rect id="park-of-scluptures" class="location park ground" x="303.293" y="104.682" width="37" height="16" fill="#CFF3D9"/>
+<rect id="park-of-scluptures" class="location park ground" x="303.293" y="104.682" width="37" height="16" fill="var(--ground) "/>
 
-<path d="M74.3168 293.319L28.735 292.286L70.7389 247.866L74.3168 293.319Z" fill="#B7D7A8"/>
+<path d="M74.3168 293.319L28.735 292.286L70.7389 247.866L74.3168 293.319Z" fill=" var(--background)"/>
 
-<rect id="chitkara-nurture-nest" class="location miscellaneous" x="599.293" y="331.682" width="17" height="36" fill="#FFE3E3"/>
-<rect id="health-care" class="location health" x="502.293" y="293.682" width="21" height="19" fill="#FFE3E3"/>
-<rect id="lecorbussier-block" class="location" x="482.293" y="134.682" width="50" height="28" fill="#DCEEFF"/>
-<rect id="claude-bernard-lab" class="location" x="681.293" y="321.682" width="35" height="18" fill="#DCEEFF"/>
-<rect id="edison-block" class="location" x="428.293" y="233.682" width="59" height="32" fill="#DCEEFF"/>
-<path id="newton-block" class="location" d="M371.293 236.682H412.293V266.682H371.293V236.682Z" fill="#DCEEFF"/>
-<path id="infosys-apple" class="location" d="M350.293 236.682H371.293V266.682H350.293V236.682Z" fill="#DCEEFF"/>
-<rect id="turing-block" class="location" x="526.293" y="231.682" width="25" height="81" fill="#DCEEFF"/>
-<rect id="omicron-learning-hub" class="location" x="567.293" y="231.682" width="25" height="78" fill="#DCEEFF"/>
-<rect id="fleming-block" class="location" x="523.293" y="331.682" width="76" height="36" fill="#DCEEFF"/>
-<rect id="galelio-block" class="location" x="346.293" y="331.682" width="20" height="54" fill="#DCEEFF"/>
-<rect id="escoffer-block" class="location" x="384.293" y="483.682" width="30" height="20" fill="#DCEEFF"/>
-<rect id="moon-hall" class="location" x="481.293" y="483.682" width="9" height="20" fill="#DCEEFF"/>
-<rect id="tesla-block" class="location" x="53.2927" y="306.682" width="21" height="65" fill="#DCEEFF"/>
-<rect id="maritime-school" class="location" x="27.2927" y="306.682" width="22" height="65" fill="#DCEEFF"/>
-<rect id="exploratorium" class="location" x="90.2927" y="328.682" width="81" height="20" fill="#DCEEFF"/>
-<rect id="pythagoras-block" class="location" x="342.293" y="393.682" width="33" height="42" fill="#DCEEFF"/>
-<rect id="pythagoras-block" class="location" x="342.293" y="441.682" width="33" height="45" fill="#DCEEFF"/>
-<rect id="rockefeller-block" class="location" x="417.293" y="578.682" width="69" height="53" fill="#DCEEFF"/>
-<rect id="martin-luther" class="location" x="507.293" y="578.682" width="36" height="53" fill="#DCEEFF"/>
-<path id="martin-extension" class="location" d="M507.293 644.682H554.293V739.682H507.293V644.682Z" fill="#DCEEFF"/>
-<path id="rockefeller-extension" class="location" d="M417.293 644.682H484.293V739.682H417.293V644.682Z" fill="#DCEEFF"/>
-
-
-<rect  id="picasso-block" class="location" x="303.293" y="125.682" width="36" height="31" fill="#DCEEFF"/>
-<rect id="art-gallery" class="location" x="317.293" y="158.682" width="22" height="13" fill="#DCEEFF"/>
-<rect id="happiness-center" class="location miscellaneous" x="317.293" y="174.682" width="22" height="13" fill="#DCEEFF"/>
-<rect id="bloom-block" class="location" x="317.293" y="191.682" width="22" height="13" fill="#DCEEFF"/>
+<rect id="chitkara-nurture-nest" class="location miscellaneous" x="599.293" y="331.682" width="17" height="36" fill="var(--health) "/>
+<rect id="health-care" class="location health" x="502.293" y="293.682" width="21" height="19" fill="var(--health) "/>
+<rect id="lecorbussier-block" class="location" x="482.293" y="134.682" width="50" height="28" fill="var(--academic) "/>
+<rect id="claude-bernard-lab" class="location" x="681.293" y="321.682" width="35" height="18" fill="var(--academic) "/>
+<rect id="edison-block" class="location" x="428.293" y="233.682" width="59" height="32" fill="var(--academic) "/>
+<path id="newton-block" class="location" d="M371.293 236.682H412.293V266.682H371.293V236.682Z" fill="var(--academic) "/>
+<path id="infosys-apple" class="location" d="M350.293 236.682H371.293V266.682H350.293V236.682Z" fill="var(--academic) "/>
+<rect id="turing-block" class="location" x="526.293" y="231.682" width="25" height="81" fill="var(--academic) "/>
+<rect id="omicron-learning-hub" class="location" x="567.293" y="231.682" width="25" height="78" fill="var(--academic) "/>
+<rect id="fleming-block" class="location" x="523.293" y="331.682" width="76" height="36" fill="var(--academic) "/>
+<rect id="galelio-block" class="location" x="346.293" y="331.682" width="20" height="54" fill="var(--academic) "/>
+<rect id="escoffer-block" class="location" x="384.293" y="483.682" width="30" height="20" fill="var(--academic) "/>
+<rect id="moon-hall" class="location" x="481.293" y="483.682" width="9" height="20" fill="var(--academic) "/>
+<rect id="tesla-block" class="location" x="53.2927" y="306.682" width="21" height="65" fill="var(--academic) "/>
+<rect id="maritime-school" class="location" x="27.2927" y="306.682" width="22" height="65" fill="var(--academic) "/>
+<rect id="exploratorium" class="location" x="90.2927" y="328.682" width="81" height="20" fill="var(--academic) "/>
+<rect id="pythagoras-block" class="location" x="342.293" y="393.682" width="33" height="42" fill="var(--academic) "/>
+<rect id="pythagoras-block" class="location" x="342.293" y="441.682" width="33" height="45" fill="var(--academic) "/>
+<rect id="rockefeller-block" class="location" x="417.293" y="578.682" width="69" height="53" fill="var(--academic) "/>
+<rect id="martin-luther" class="location" x="507.293" y="578.682" width="36" height="53" fill="var(--academic) "/>
+<path id="martin-extension" class="location" d="M507.293 644.682H554.293V739.682H507.293V644.682Z" fill="var(--academic) "/>
+<path id="rockefeller-extension" class="location" d="M417.293 644.682H484.293V739.682H417.293V644.682Z" fill="var(--academic) "/>
 
 
-<rect id="library" class="location" x="514.293" y="331.682" width="9" height="8" fill="#DCEEFF"/>
-<path id="law" class="location" d="M616.293 331.682H652.293V367.682H616.293V331.682Z" fill="#DCEEFF"/>
-<rect id="deMorgan-block" class="location" x="502.293" y="247.682" width="21" height="29" fill="#D9D9D9"/>
+<rect  id="picasso-block" class="location" x="303.293" y="125.682" width="36" height="31" fill="var(--academic) "/>
+<rect id="art-gallery" class="location" x="317.293" y="158.682" width="22" height="13" fill="var(--academic) "/>
+<rect id="happiness-center" class="location miscellaneous" x="317.293" y="174.682" width="22" height="13" fill="var(--academic) "/>
+<rect id="bloom-block" class="location" x="317.293" y="191.682" width="22" height="13" fill="var(--academic) "/>
+
+
+<rect id="library" class="location" x="514.293" y="331.682" width="9" height="8" fill="var(--academic) "/>
+<path id="law" class="location" d="M616.293 331.682H652.293V367.682H616.293V331.682Z" fill="var(--academic) "/>
+<rect id="deMorgan-block" class="location" x="502.293" y="247.682" width="21" height="29" fill="var(--administration) "/>
 
 <!-- Roads -->
-<line x1="332.293" y1="511.398" x2="332.322" y2="319.398" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="332.301" y1="326.652" x2="328.301" y2="263.652" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="395.293" y1="323.399" x2="332.293" y2="323.399" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="328.294" y1="681.298" x2="332.577" y2="511.298" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M503.293 479.682L566.293 552.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M494.759 514.946L498.293 681.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M651.793 739.899L572.293 739.899L565.293 726.399L557.793 712.899" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M502.293 678.399L483.793 678.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M328.293 681.399L404.293 686.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M564.293 550.682L577.955 561.421L576.047 565.636L580.521 574.443L584.67 574.371L588.793 606.182" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M567.293 551.817L620.293 552.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M620.62 553.008L659.293 594.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M620.293 641.682L656.293 641.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M588.661 606.699L586.293 646.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M626.293 641.682L587.293 643.333" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M618.921 639.679L622.661 633.591L624.795 622.937L622.651 610.757L586.293 606.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M658.387 590.682L657.055 624.381M657.624 609.983L656.293 643.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M656.181 641.682L655.616 664.572M655.857 654.792L655.293 677.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M655.293 675.682L656.564 699.208M656.021 689.156L657.293 712.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M787.296 713.069L703.999 712.823M739.589 712.928L656.293 712.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M787.296 758.444L703.999 758.198M739.589 758.303L656.293 758.057" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M786.293 760.682L786.929 730.162M786.657 743.202L787.293 712.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M786.293 754.399L786.293 809.399L652.793 809.399L652.793 754.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M785.793 713.182L795.793 712.182L797.793 706.682L795.793 691.182L736.293 691.182L736.293 675.34L652.293 675.34" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M656.293 708.399L655.021 731.289M655.564 721.509L654.293 744.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M616.293 552.682L702.293 552.061" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M495.293 295.433V321.682M495.293 297.88V276.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M495.876 249.183L495.293 280.682M495.822 252.12L496.293 226.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M401.626 300.148L402.793 270.399M401.735 297.375L400.793 321.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M560.793 317.849L663.201 317.849L665.061 386.002" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="724.293" y1="385.682" x2="724.293" y2="319.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M560.949 321.877L558.293 225.682L495.949 222.877" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M699.293 552.182L705.293 533.182L705.293 387.755" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="328.293" y1="800.399" x2="328.293" y2="678.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M177.293 321.399L332.293 322.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M177.293 318.399L177.293 186.399L188.793 162.399L265.293 108.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M79.7927 318.399L177.793 319.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M82.7927 316.399L79.7927 380.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M80.7927 297.399L82.7927 318.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M82.7927 266.399L80.7927 302.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M177.293 314.399V358.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M179.293 354.399L108.293 354.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M79.7927 301.399L19.7927 300.399L16.2927 351.399L18.2927 376.399L50.7927 380.399L83.2927 376.399" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M456.124 273.682H401.293M451.012 273.682H495.293" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="496.293" y1="323.682" x2="395.293" y2="323.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M399.295 389.182L401.295 327.182" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M390.793 386.182L396.793 390.263L405.73 390.263L415.965 392.05" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M393.793 325.182L386.293 333.682L378.793 340.682L375.793 346.682L371.293 356.682L377.293 369.182L392.293 387.682" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="329.293" y1="268.682" x2="329.293" y2="239.682" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="326.108" y1="242.168" x2="350.402" y2="226.331" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="349.246" y1="226.519" x2="420.246" y2="225.694" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="415.204" y1="225.765" x2="502.197" y2="223.683" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="452.318" y1="137.065" x2="484.318" y2="174.065" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="418.274" y1="99.0149" x2="452.274" y2="137.015" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="389.278" y1="67.0196" x2="422.278" y2="104.02" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="326.293" y1="267.682" x2="305.293" y2="267.682" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="415.293" y1="97.6821" x2="456.293" y2="97.6821" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="453.293" y1="97.6821" x2="580.293" y2="97.6821" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M373.793 50.1821L338.793 19.6821L327.793 26.1821L302.793 46.1821L258.293 85.1821L264.293 106.182" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="370.241" y1="45.9792" x2="392.241" y2="69.9792" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M291.293 115.182L291.293 106.182L372.905 50.4731" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M453.293 98.6821L462.293 105.682L464.793 118.682L462.293 129.182L453.293 135.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M480.793 172.682L539.838 172.682L539.838 130.524" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M482.293 171.682L493.793 194.182L496.232 225.378" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="419.293" y1="227.682" x2="419.293" y2="271.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M347.966 230.571L347.966 103.682L366.793 85.1821L395.293 69.6821" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M332.268 515.682L414.268 516.182L496.268 515.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M423.472 463.204L459.89 461.478L496.321 461.256" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M502.879 475.682L495.293 516.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M653.577 755.682L654.653 748.052M654.193 751.312L655.27 743.682" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="490.205" y1="460.941" x2="506.205" y2="477.941" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="494.293" y1="385.682" x2="494.293" y2="463.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M495.293 346.767V384.682M495.293 350.301V319.682" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="493.324" y1="391.5" x2="415.299" y2="391.864" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="490.42" y1="381.684" x2="616.42" y2="385.684" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="606.293" y1="385.682" x2="705.293" y2="385.682" stroke="#B8B8B8" stroke-width="8"/>
-<line x1="705.293" y1="385.682" x2="728.293" y2="385.682" stroke="#B8B8B8" stroke-width="8"/>
-<path d="M260.293 112.682L265.293 109.682L278.793 153.182L328.293 242.682" stroke="#B8B8B8" stroke-width="8"/>
+
+<line id="road-svg-0" class="road" x1="332.293" y1="511.398" x2="332.322" y2="319.398" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-1" class="road" x1="332.301" y1="326.652" x2="328.301" y2="263.652" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-2" class="road" x1="395.293" y1="323.399" x2="332.293" y2="323.399" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-3" class="road" x1="328.294" y1="681.298" x2="332.577" y2="511.298" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-4" class="road" d="M503.293 479.682L566.293 552.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-5" class="road" d="M494.759 514.946L498.293 681.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-6" class="road" d="M651.793 739.899L572.293 739.899L565.293 726.399L557.793 712.899" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-7" class="road" d="M502.293 678.399L483.793 678.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-8" class="road" d="M328.293 681.399L404.293 686.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-9" class="road" d="M564.293 550.682L577.955 561.421L576.047 565.636L580.521 574.443L584.67 574.371L588.793 606.182" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-10" class="road" d="M567.293 551.817L620.293 552.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-11" class="road" d="M620.62 553.008L659.293 594.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-12" class="road" d="M620.293 641.682L656.293 641.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-13" class="road" d="M588.661 606.699L586.293 646.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-14" class="road" d="M626.293 641.682L587.293 643.333" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-15" class="road" d="M618.921 639.679L622.661 633.591L624.795 622.937L622.651 610.757L586.293 606.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-16" class="road" d="M658.387 590.682L657.055 624.381M657.624 609.983L656.293 643.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-17" class="road" d="M656.181 641.682L655.616 664.572M655.857 654.792L655.293 677.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-18" class="road" d="M655.293 675.682L656.564 699.208M656.021 689.156L657.293 712.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-19" class="road" d="M787.296 713.069L703.999 712.823M739.589 712.928L656.293 712.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-20" class="road" d="M787.296 758.444L703.999 758.198M739.589 758.303L656.293 758.057" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-21" class="road" d="M786.293 760.682L786.929 730.162M786.657 743.202L787.293 712.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-22" class="road" d="M786.293 754.399L786.293 809.399L652.793 809.399L652.793 754.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-23" class="road" d="M785.793 713.182L795.793 712.182L797.793 706.682L795.793 691.182L736.293 691.182L736.293 675.34L652.293 675.34" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-24" class="road" d="M656.293 708.399L655.021 731.289M655.564 721.509L654.293 744.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-25" class="road" d="M616.293 552.682L702.293 552.061" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-26" class="road" d="M495.293 295.433V321.682M495.293 297.88V276.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-27" class="road" d="M495.876 249.183L495.293 280.682M495.822 252.12L496.293 226.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-28" class="road" d="M401.626 300.148L402.793 270.399M401.735 297.375L400.793 321.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-29" class="road" d="M560.793 317.849L663.201 317.849L665.061 386.002" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-30" class="road" x1="724.293" y1="385.682" x2="724.293" y2="319.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-31" class="road" d="M560.949 321.877L558.293 225.682L495.949 222.877" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-32" class="road" d="M699.293 552.182L705.293 533.182L705.293 387.755" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-33" class="road" x1="328.293" y1="800.399" x2="328.293" y2="678.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-34" class="road" d="M177.293 321.399L332.293 322.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-35" class="road" d="M177.293 318.399L177.293 186.399L188.793 162.399L265.293 108.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-36" class="road" d="M79.7927 318.399L177.793 319.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-37" class="road" d="M82.7927 316.399L79.7927 380.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-38" class="road" d="M80.7927 297.399L82.7927 318.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-39" class="road" d="M82.7927 266.399L80.7927 302.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-40" class="road" d="M177.293 314.399V358.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-41" class="road" d="M179.293 354.399L108.293 354.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-42" class="road" d="M79.7927 301.399L19.7927 300.399L16.2927 351.399L18.2927 376.399L50.7927 380.399L83.2927 376.399" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-43" class="road" d="M456.124 273.682H401.293M451.012 273.682H495.293" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-44" class="road" x1="496.293" y1="323.682" x2="395.293" y2="323.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-45" class="road" d="M399.295 389.182L401.295 327.182" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-46" class="road" d="M390.793 386.182L396.793 390.263L405.73 390.263L415.965 392.05" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-47" class="road" d="M393.793 325.182L386.293 333.682L378.793 340.682L375.793 346.682L371.293 356.682L377.293 369.182L392.293 387.682" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-48" class="road" x1="329.293" y1="268.682" x2="329.293" y2="239.682" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-49" class="road" x1="326.108" y1="242.168" x2="350.402" y2="226.331" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-50" class="road" x1="349.246" y1="226.519" x2="420.246" y2="225.694" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-51" class="road" x1="415.204" y1="225.765" x2="502.197" y2="223.683" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-52" class="road" x1="452.318" y1="137.065" x2="484.318" y2="174.065" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-53" class="road" x1="418.274" y1="99.0149" x2="452.274" y2="137.015" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-54" class="road" x1="389.278" y1="67.0196" x2="422.278" y2="104.02" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-55" class="road" x1="326.293" y1="267.682" x2="305.293" y2="267.682" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-56" class="road" x1="415.293" y1="97.6821" x2="456.293" y2="97.6821" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-57" class="road" x1="453.293" y1="97.6821" x2="580.293" y2="97.6821" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-58" class="road" d="M373.793 50.1821L338.793 19.6821L327.793 26.1821L302.793 46.1821L258.293 85.1821L264.293 106.182" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-59" class="road" x1="370.241" y1="45.9792" x2="392.241" y2="69.9792" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-60" class="road" d="M291.293 115.182L291.293 106.182L372.905 50.4731" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-61" class="road" d="M453.293 98.6821L462.293 105.682L464.793 118.682L462.293 129.182L453.293 135.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-62" class="road" d="M480.793 172.682L539.838 172.682L539.838 130.524" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-63" class="road" d="M482.293 171.682L493.793 194.182L496.232 225.378" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-64" class="road" x1="419.293" y1="227.682" x2="419.293" y2="271.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-65" class="road" d="M347.966 230.571L347.966 103.682L366.793 85.1821L395.293 69.6821" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-66" class="road" d="M332.268 515.682L414.268 516.182L496.268 515.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-67" class="road" d="M423.472 463.204L459.89 461.478L496.321 461.256" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-68" class="road" d="M502.879 475.682L495.293 516.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-69" class="road" d="M653.577 755.682L654.653 748.052M654.193 751.312L655.27 743.682" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-70" class="road" x1="490.205" y1="460.941" x2="506.205" y2="477.941" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-71" class="road" x1="494.293" y1="385.682" x2="494.293" y2="463.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-72" class="road" d="M495.293 346.767V384.682M495.293 350.301V319.682" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-73" class="road" x1="493.324" y1="391.5" x2="415.299" y2="391.864" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-74" class="road" x1="490.42" y1="381.684" x2="616.42" y2="385.684" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-75" class="road" x1="606.293" y1="385.682" x2="705.293" y2="385.682" stroke="var(--paths)" stroke-width="8"/>
+
+<line id="road-svg-76" class="road" x1="705.293" y1="385.682" x2="728.293" y2="385.682" stroke="var(--paths)" stroke-width="8"/>
+
+<path id="road-svg-77" class="road" d="M260.293 112.682L265.293 109.682L278.793 153.182L328.293 242.682" stroke="var(--paths)" stroke-width="8"/>
 
 
-<rect id="babbage-block" class="location administration" x="470.293" y="106.682" width="32" height="23" fill="#d9d9d9"/>
-<rect id="admission-block" class="location administration" x="339.671" y="82.9315" width="38.6647" height="12.9337" transform="rotate(-35.1308 339.671 82.9315)" fill="#ECECEC"/>
-<path id="maingate-entry-block" class="location administration" d="M421.504 90.9577L376.833 37.7434L426.545 21.6622L421.504 90.9577Z" fill="#ECECEC"/>
+<rect id="babbage-block" class="location administration" x="470.293" y="106.682" width="32" height="23" fill="var(--administration) "/>
+<rect id="admission-block" class="location administration" x="339.671" y="82.9315" width="38.6647" height="12.9337" transform="rotate(-35.1308 339.671 82.9315)" fill="var(--administration)"/>
+<path id="maingate-entry-block" class="location administration" d="M421.504 90.9577L376.833 37.7434L426.545 21.6622L421.504 90.9577Z" fill="var(--administration)"/>
 
 <!-- Parkings -->
-<rect id="parking-chaivyanjan" class="location parking" x="266.293" y="85.326" width="84.71" height="25.4936" transform="rotate(-39.4213 266.293 85.326)" fill="#FFF5CC"/>
-<rect id="parking-maingate" class="location parking" x="431.446" y="19.752" width="156.904" height="66.7961" transform="rotate(0.0489253 431.446 19.752)" fill="#FFF5CC"/>
+<rect id="parking-chaivyanjan" class="location parking" x="266.293" y="85.326" width="84.71" height="25.4936" transform="rotate(-39.4213 266.293 85.326)" fill=" var(--parking) "/>
+<rect id="parking-maingate" class="location parking" x="431.446" y="19.752" width="156.904" height="66.7961" transform="rotate(0.0489253 431.446 19.752)" fill=" var(--parking) "/>
 <g id="parking-omega" class="location parking">
-<rect id="parking-omega" class="location parking" x="646.293" y="393.682" width="50" height="121" fill="#FFF5CC"/>
-<rect id="parking-omega"  class="location parking" x="610.293" y="399.682" width="27" height="63" fill="#FFF5CC"/>
+<rect id="parking-omega" class="location parking" x="646.293" y="393.682" width="50" height="121" fill=" var(--parking) "/>
+<rect id="parking-omega"  class="location parking" x="610.293" y="399.682" width="27" height="63" fill=" var(--parking) "/>
 </g>
-<rect id="parking-turing" class="location parking" x="503.324" y="179.682" width="83.9745" height="36.9283" transform="rotate(0.0489253 503.324 179.682)" fill="#FFF5CC"/>
-<rect id="parking-bus" class="location parking"   x="342.293" y="523.682" width="144" height="44" fill="#FFF5CC"/>
+<rect id="parking-turing" class="location parking" x="503.324" y="179.682" width="83.9745" height="36.9283" transform="rotate(0.0489253 503.324 179.682)" fill=" var(--parking) "/>
+<rect id="parking-bus" class="location parking"   x="342.293" y="523.682" width="144" height="44" fill=" var(--parking) "/>
 <g id="parking-chaivyanjan-left" class="location parking">
-<rect id="parking-chaivyanjan-left" class="location parking" x="221.293" y="147.697" width="38.2328" height="42.2956" transform="rotate(-35.1566 221.293 147.697)" fill="#FFF5CC"/>
-<path id="parking-chaivyanjan-left" class="location parking" d="M221.793 146.682L246.474 182.682H197.111L221.793 146.682Z" fill="#FFF5CC"/>
+<rect id="parking-chaivyanjan-left" class="location parking" x="221.293" y="147.697" width="38.2328" height="42.2956" transform="rotate(-35.1566 221.293 147.697)" fill=" var(--parking) "/>
+<path id="parking-chaivyanjan-left" class="location parking" d="M221.793 146.682L246.474 182.682H197.111L221.793 146.682Z" fill=" var(--parking) "/>
 </g>
-<rect id="parking-tesla" class="location parking" x="90.2927" y="236.682" width="77" height="71" fill="#FFF5CC"/>
+<rect id="parking-tesla" class="location parking" x="90.2927" y="236.682" width="77" height="71" fill=" var(--parking) "/>
 
 <!-- Background -->
-<rect x="665.293" y="594.682" width="179" height="69" fill="#B7D7A8"/>
-<rect x="756.293" y="575.682" width="88" height="23" fill="#B7D7A8"/>
-<rect x="756.293" y="575.682" width="88" height="23" fill="#B7D7A8"/>
-<rect x="737.293" y="308.413" width="79" height="50.2693" fill="#B7D7A8"/>
-<rect x="598.293" y="14.6821" width="218" height="293.731" fill="#B7D7A8"/>
-<rect x="27.2927" y="389.682" width="290" height="414" fill="#B7D7A8"/>
-<line id="national-highway" x1="105.293" y1="159.682" x2="105.293" y2="14.6821" stroke="#AEB6C1" stroke-width="8"/>
-<line x1="10.1463" y1="254.311" x2="288.146" y2="26.3107" stroke="#AEB6C1" stroke-width="32"/>
-<rect x="346.293" y="579.682" width="62" height="88" fill="#CFE8C8"/>
+<rect x="665.293" y="594.682" width="179" height="69" fill=" var(--background)"/>
+<rect x="756.293" y="575.682" width="88" height="23" fill=" var(--background)"/>
+<rect x="756.293" y="575.682" width="88" height="23" fill=" var(--background)"/>
+<rect x="737.293" y="308.413" width="79" height="50.2693" fill=" var(--background)"/>
+<rect x="598.293" y="14.6821" width="218" height="293.731" fill=" var(--background)"/>
+<rect x="27.2927" y="389.682" width="290" height="414" fill=" var(--background)"/>
+<line id="national-highway" x1="105.293" y1="159.682" x2="105.293" y2="14.6821" stroke="var(--NH)" stroke-width="8"/>
+<line x1="10.1463" y1="254.311" x2="288.146" y2="26.3107" stroke="var(--NH)" stroke-width="32"/>
+<rect x="346.293" y="579.682" width="62" height="88" fill="var(--background)"/>
 <defs>
 <pattern id="pattern0_8_39" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_8_39" transform="scale(0.00116959 0.00118765)"/>

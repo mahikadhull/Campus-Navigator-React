@@ -182,4 +182,25 @@
     text-shadow:
         0 2px 10px rgba(0, 0, 0, 0.65);
 }
+#landing-skip-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10000;
+    cursor: pointer;
+    margin: 8px;
+    animation: landing-skip-btn-fadein 1s ease-in forwards;
+}
+@keyframes landing-skip-btn-fadein{
+    0%{
+        transform: translateX(100px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
 
